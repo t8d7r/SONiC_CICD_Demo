@@ -37,4 +37,6 @@ vlans_list:
     vni: 11200
     vrf: Vrf2
 
-
+vrfs_list:
+  name: Vrf1
+  name: Vrf2
