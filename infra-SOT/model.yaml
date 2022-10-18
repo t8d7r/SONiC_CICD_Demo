@@ -1,0 +1,43 @@
+Site01:
+  fabric01:
+    Spines:
+      Spine01
+        OS: SONiC
+        ASN: 65000
+        Lo_und:
+        Lo_vtep:
+        Mgmt:
+      Spine02
+        OS: SONiC
+        ASN: 65000
+        Lo_und:
+        Lo_vtep:
+        Mgmt:
+    Leaves:
+      Leaves01
+        OS: SONiC
+        ASN: 65001
+        Lo_und:
+        Lo_vtep:
+        Mgmt:
+      Leaves02
+        OS: SONiC
+        ASN: 65001
+        Lo_und:
+        Lo_vtep:
+        Mgmt:
+      Leaves03
+        OS: SONiC
+        ASN: 65002
+        Lo_und:
+        Lo_vtep:
+        Mgmt:
+      Leaves04
+        OS: SONiC
+        ASN: 65002
+        Lo_und:
+        Lo_vtep:
+        Mgmt:
+    Borders:
+      Borders01
+      Borders02

@@ -1,0 +1,16 @@
+---
+- hosts: sonic
+  gather_facts: False
+  connection: httpapi
+  collections:
+    - dellemc.enterprise_sonic
+  tasks:
+  - name: Change file ownership, group and permissions
+    connection: ssh
+    copy:
+      src: "./{{inventory_hostname}}_config_db.json" 
+      dest: "/home/admin/{{inventory_hostname}}_config_db.json"
+  - name: load new config
+    connection: ssh
+    shell: "sudo config reload -y /home/admin/{{inventory_hostname}}_config_db.json"
+ 

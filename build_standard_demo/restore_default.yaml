@@ -1,0 +1,24 @@
+---
+- hosts: sonic
+  gather_facts: False
+  connection: httpapi
+  collections:
+    - dellemc.enterprise_sonic
+  tasks:
+  - name: Delete config
+    connection: ssh
+    shell: sudo config erase -y 
+    ignore_errors: yes
+  
+  - name: Reboot machine
+    connection: ssh
+    become: yes
+    ansible.builtin.reboot:
+      reboot_timeout: 300
+
+  - name: Check system status
+    connection: ssh
+    shell: "show system status"
+    register: status
+    
+  - debug: var=status
