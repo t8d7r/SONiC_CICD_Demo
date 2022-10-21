@@ -1,0 +1,53 @@
+version: "3.9"
+networks:
+  backend:
+services:
+  dind:
+    container_name: dind_jenkins
+    image: docker:dind
+    ports:
+      - "2380:2380"
+    volumes:
+      - ./jenkins-data:/var/jenkins_home
+      - ./jenkins-docker-certs:/certs/client
+    privileged: true
+    environment: 
+      - DOCKER_TLS_CERTDIR=/certs
+    networks:
+      backend:
+        aliases:
+          - dind_jenkins
+  jenkins:
+    container_name: jenkins_app
+    image: jenkins:jenkins
+    build:
+      context: ./ 
+      dockerfile: JenkinsDockerfile
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - ./jenkins-data:/var/jenkins_home
+      - ./jenkins-docker-certs:/certs/client:ro
+    environment:
+      - DOCKER_HOST=tcp://:2380
+      - DOCKER_CERT_PATH=/certs/client
+      - DOCKER_TLS_VERIFY=1
+    networks:
+      backend:
+        aliases:
+          - jenkins
+    restart: on-failure
+  ubunt_services:
+    container_name: ubunt_services
+    image: ubuntu:22.04
+    volumes:
+      - ./services-data:/var/ubunt_services_home
+    build:
+      context: ./
+      dockerfile: UbuntservicesDockerfile
+    command: java -jar /var/ubunt_services_home/agent.jar -jnlpUrl http://jenkins_app:8080/computer/services/jenkins-agent.jnlp -secret e8538b3a61ca95c97a6fa157a0b798924909a717d5683eeb08c31a7a0a40e97e -workDir "/home/jenkins"
+    networks:
+      backend:
+        aliases:
+          - ubunt_services

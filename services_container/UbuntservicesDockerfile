@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y ansible
+RUN apt install -y default-jdk
+RUN apt install -y curl
