@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'services'}
     stages {
 	stage('Test command') {
             steps {
