@@ -102,3 +102,23 @@ INSTALLED plugins/blueocean-git-pipeline.jpi : 1.25.8
 --- Copying files at Thu Oct 20 18:17:34 UTC 2022
 --- Copying files at Thu Oct 20 18:37:35 UTC 2022
 --- Copying files at Fri Oct 21 07:19:59 UTC 2022
+--- Copying files at Thu Nov  3 11:02:10 UTC 2022
+UPGRADED plugins/jackson2-api.jpi : Image version (2.13.4.20221013-295.v8e29ea_354141) is newer than installed version (2.13.4-293.vee957901b_6fb)
+UPGRADED plugins/pipeline-model-api.jpi : Image version (2.2118.v31fd5b_9944b_5) is newer than installed version (2.2114.v2654ca_721309)
+UPGRADED plugins/pipeline-model-definition.jpi : Image version (2.2118.v31fd5b_9944b_5) is newer than installed version (2.2114.v2654ca_721309)
+UPGRADED plugins/junit.jpi : Image version (1156.vcf492e95a_a_b_0) is newer than installed version (1153.v1c24f1a_d2553)
+UPGRADED plugins/git-client.jpi : Image version (3.13.0) is newer than installed version (3.12.1)
+UPGRADED plugins/github.jpi : Image version (1.36.0) is newer than installed version (1.35.0)
+UPGRADED plugins/workflow-cps.jpi : Image version (2803.v1a_f77ffcc773) is newer than installed version (2802.v5ea_628154b_c2)
+UPGRADED plugins/pipeline-stage-tags-metadata.jpi : Image version (2.2118.v31fd5b_9944b_5) is newer than installed version (2.2114.v2654ca_721309)
+UPGRADED plugins/github-branch-source.jpi : Image version (1696.v3a_7603564d04) is newer than installed version (1695.v88de84e9f6b_9)
+UPGRADED plugins/checks-api.jpi : Image version (1.8.0) is newer than installed version (1.7.5)
+UPGRADED plugins/script-security.jpi : Image version (1189.vb_a_b_7c8fd5fde) is newer than installed version (1183.v774b_0b_0a_a_451)
+UPGRADED plugins/git.jpi : Image version (4.13.0) is newer than installed version (4.12.1)
+UPGRADED plugins/workflow-support.jpi : Image version (839.v35e2736cfd5c) is newer than installed version (838.va_3a_087b_4055b)
+UPGRADED plugins/pipeline-model-extensions.jpi : Image version (2.2118.v31fd5b_9944b_5) is newer than installed version (2.2114.v2654ca_721309)
+UPGRADED plugins/jaxb.jpi : Image version (2.3.7-1) is newer than installed version (2.3.6-2)
+UPGRADED plugins/pipeline-input-step.jpi : Image version (456.vd8a_957db_5b_e9) is newer than installed version (451.vf1a_a_4f405289)
+UPGRADED plugins/pipeline-groovy-lib.jpi : Image version (613.v9c41a_160233f) is newer than installed version (612.v84da_9c54906d)
+UPGRADED plugins/workflow-job.jpi : Image version (1254.v3f64639b_11dd) is newer than installed version (1239.v71b_b_a_124a_725)
+UPGRADED plugins/workflow-durable-task-step.jpi : Image version (1210.va_1e5d77e122b) is newer than installed version (1206.v8a_d5f86e336b)

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pipeline-input-step</artifactId>
-  <version>451.vf1a_a_4f405289</version>
+  <version>456.vd8a_957db_5b_e9</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Input Step</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/pipeline-input-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-input-step-plugin.git</developerConnection>
-    <tag>f1aa4f40528994359aaad2b82d3fb41508c682db</tag>
+    <tag>d8a957db5be95ddfbf81f41a60b2f034000314b5</tag>
     <url>https://github.com/jenkinsci/pipeline-input-step-plugin</url>
   </scm>
   <distributionManagement>

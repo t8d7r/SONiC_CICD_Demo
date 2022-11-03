@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>junit</artifactId>
-  <version>1153.v1c24f1a_d2553</version>
+  <version>1156.vcf492e95a_a_b_0</version>
   <packaging>hpi</packaging>
   <name>JUnit Plugin</name>
   <description>Allows JUnit-format test results to be published.</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/junit-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/junit-plugin.git</developerConnection>
-    <tag>1c24f1ad2553ef40f1801edc752c654572664066</tag>
+    <tag>cf492e95aab0e2e411f5eb7613f9050daf567e42</tag>
     <url>https://github.com/jenkinsci/junit-plugin</url>
   </scm>
   <distributionManagement>
@@ -42,7 +42,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>ionicons-api</artifactId>
-      <version>28.va_f3a_84439e5f</version>
+      <version>31.v4757b_6987003</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -84,7 +84,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>script-security</artifactId>
-      <version>1175.v4b_d517d6db_f0</version>
+      <version>1183.v774b_0b_0a_a_451</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
