@@ -1,0 +1,33 @@
+{% for type in fabric_model %}
+{% if fabric_model[type] != None %}
+{% for sw in fabric_model[type] %}
+{{sw['Name']}} ansible_host={{sw['Mgmt'][:-3]}} 
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+[Spines]
+{% if fabric_model['SPINES'] != None %}
+{% for sw in fabric_model['SPINES'] %}
+{{sw['Name']}}
+{% endfor %}
+{% endif %}
+
+[Leaves]
+{% if fabric_model['LEAVES'] != None %}
+{% for sw in fabric_model['LEAVES'] %}
+{{sw['Name']}}
+{% endfor %}
+{% endif %}
+
+[Borders]
+{% if fabric_model['BORDERS'] != None %}
+{% for sw in fabric_model['BORDERS'] %}
+{{sw['Name']}}
+{% endfor %}
+{% endif %}
+
+[sonic:children]
+Spines
+Leaves
+Borders

@@ -1,0 +1,24 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: load variable from tenants.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/tenants.yaml
+        name: tenants
+
+    - debug: var=tenants
+
+    - name: load variable from tenants_mapping.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/tenants_mapping.yaml
+        name: tenants_mapping
+
+    - debug: var=tenants_mapping
+
+    - name: Building Switchs Vars files
+      template:
+        src=../template/tenant_template.j2
+        dest=../host_vars/{{inventory_hostname}}.yaml
+

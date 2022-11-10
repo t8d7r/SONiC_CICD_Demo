@@ -1,0 +1,10 @@
+commit 598420c10d6b176c49f8f849e33cff03bab588c6
+tree e3b339b309601d14483d6a42f2641e41ccebe9ed
+parent b78cdf4f34128c10ca067c9a3e1baaf366cbfbc1
+author t8d7r <t8d7r@protonmail.com> 2022-11-03 13:16:14 +0000
+committer t8d7r <t8d7r@protonmail.com> 2022-11-03 13:16:14 +0000
+
+    with group_vars
+
+
+:100644 100644 7a9225841fb4df23aead95dd4414f7b49678f7a9 e191844c06596b08b917a545cb29cbf8a537946b M	services_container/jenkins-data/logs/tasks/Fingerprint cleanup.log

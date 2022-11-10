@@ -1,0 +1,50 @@
+---
+mapping:
+  - id: 11
+    devices:
+      - LEAF01:
+          access:
+            Eth1/1
+          tagged:
+            Po100
+      - LEAF02:
+          access:
+            Eth1/1
+          tagged:
+            Po100
+  - id: 12
+    devices:
+      - LEAF01:
+          access:
+            Eth1/2
+          tagged:
+            Po100
+      - LEAF02:
+          access:
+            Eth1/1
+          tagged:
+            Po100
+  - id: 21
+    devices:
+      - LEAF03:
+          access:
+            Eth1/1
+          tagged:
+            Po100
+      - LEAF04:
+          access:
+            Eth1/1
+          tagged:
+            Po100
+  - id: 22
+    devices:
+      - LEAF03:
+          access:
+            Eth1/2
+          tagged:
+            Po100
+      - LEAF04:
+          access:
+            Eth1/2
+          tagged:
+            Po100

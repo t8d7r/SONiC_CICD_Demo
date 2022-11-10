@@ -1,0 +1,71 @@
+---
+switch_role: leaf
+
+sonic_vlans:
+   - vlan_id: {i}
+   - vlan_id: {i}
+
+sonic_l3_interfaces:
+   - name: Vlan100
+     ipv4:
+       anycast_addresses:
+         - 192.168.10.254/24
+   - name: Vlan200
+     ipv4:
+       anycast_addresses:
+         - 192.168.20.254/24
+   - name: Vlan300
+     ipv4:
+       anycast_addresses:
+         - 192.168.30.254/24
+   - name: Vlan400
+     ipv4:
+       anycast_addresses:
+         - 192.168.40.254/24
+
+
+sonic_lag_interfaces:
+   - name: Portchannel1
+     members:
+      interfaces:
+        - member: Eth1/8
+        - member: Eth1/9
+
+sonic_vrfs:
+  - name: VrfPaire
+    members:
+      interfaces:
+        - name: Vlan200
+        - name: Vlan400
+        - name: Vlan1000
+  - name: VrfImpaire
+    members:
+      interfaces:
+        - name: Vlan100
+        - name: Vlan300
+        - name: Vlan1001
+
+sonic_vxlans:
+  - name: vtep2
+    source_ip: 10.0.10.2
+    evpn_nvo: nvo1
+    vlan_map:
+      - vni: 100
+        vlan: 100
+      - vni: 200
+        vlan: 200
+      - vni: 300
+        vlan: 300
+      - vni: 400
+        vlan: 400
+      - vni: 500
+        vlan: 500
+      - vni: 1000
+        vlan: 1000
+      - vni: 1001
+        vlan: 1001
+    vrf_map:
+      - vni: 1000
+        vrf: VrfPaire
+      - vni: 1001
+        vrf: VrfImpaire

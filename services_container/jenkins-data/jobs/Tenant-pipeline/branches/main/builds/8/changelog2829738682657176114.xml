@@ -1,0 +1,10 @@
+commit 80d4ff0774d82c750684546f9448a6bccd932bf1
+tree 3c65b022b48a5cac269711ee233518cbff029f2c
+parent 362cd1e70cd0f4c9a29be40b7bcb630116373274
+author t8d7r <t8d7r@protonmail.com> 2022-11-03 14:21:55 +0000
+committer t8d7r <t8d7r@protonmail.com> 2022-11-03 14:21:55 +0000
+
+    with yaml syntax ok
+
+
+:100644 100644 3af5a43307306b26923c921b993bc73a08ddf69c c89ebf5739efffd8f7776f19c6b0a11ad3e65b93 M	infra-SOT/tenants.yaml

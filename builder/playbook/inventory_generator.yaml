@@ -1,0 +1,17 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: load variable from fabric_modeling.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/fabric_modeling.yaml
+        name: fabric_model
+
+    - debug: var=fabric_model
+
+    - name: Building Switchs Vars files
+      template:
+        src=../template/inventory_template.j2
+        dest=../inventory
+

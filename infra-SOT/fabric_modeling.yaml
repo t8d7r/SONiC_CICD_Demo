@@ -1,0 +1,54 @@
+---
+SPINES:
+  - Name: SPINE01
+    OS: sonic
+    ASN: 65000
+    Lo_und: 10.1.1.101/32
+    Mgmt: 172.16.100.59/24
+  - Name: SPINE02
+    OS: sonic
+    ASN: 65000
+    Lo_und: 10.1.1.102/32
+    Mgmt: 172.16.100.63/24
+LEAVES:
+  - Name: LEAF01
+    OS: sonic
+    ASN: 65001
+    Lo_und: 10.1.1.11/32
+    Lo_vtep: 10.1.0.1/32
+    MCLAG_Peer: LEAF02
+    MCLAG_Interface: Po100, Eth1/8, Eth1/9
+    MCLAG_Ip: 10.87.87.0/31
+    MCLAG_Peer_Ip: 10.87.87.1/31
+    Mgmt: 172.16.100.57/24
+  - Name: LEAF02
+    OS: sonic
+    ASN: 65001
+    Lo_und: 10.1.1.12/32
+    Lo_vtep: 10.1.0.1/32
+    MCLAG_Peer: LEAF01
+    MCLAG_Interface: Po100, Eth1/8, Eth1/9
+    MCLAG_Ip: 10.87.87.1/31
+    MCLAG_Peer_Ip: 10.87.87.0/31
+    Mgmt: 172.16.100.60/24
+  - Name: LEAF03
+    OS: sonic
+    ASN: 65002
+    Lo_und: 10.1.1.13/32
+    Lo_vtep: 10.1.0.2/32
+    MCLAG_Peer: LEAF04
+    MCLAG_Interface: Po100, Eth1/8, Eth1/9
+    MCLAG_Ip: 10.87.87.2/31
+    MCLAG_Peer_Ip: 10.87.87.3/31
+    Mgmt: 172.16.100.61/24
+  - Name: LEAF04
+    OS: sonic
+    ASN: 65002
+    Lo_und: 10.1.1.14/32
+    Lo_vtep: 10.1.0.2/32
+    MCLAG_Peer: LEAF03
+    MCLAG_Interface: Po100, Eth1/8, Eth1/9
+    MCLAG_Ip: 10.87.87.3/31
+    MCLAG_Peer_Ip: 10.87.87.2/31
+    Mgmt: 172.16.100.62/24
+BORDERS:

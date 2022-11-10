@@ -1,0 +1,23 @@
+SPINE01 ansible_host=172.16.100.59 
+SPINE02 ansible_host=172.16.100.63 
+LEAF01 ansible_host=172.16.100.57 
+LEAF02 ansible_host=172.16.100.60 
+LEAF03 ansible_host=172.16.100.61 
+LEAF04 ansible_host=172.16.100.62 
+
+[Spines]
+SPINE01
+SPINE02
+
+[Leaves]
+LEAF01
+LEAF02
+LEAF03
+LEAF04
+
+[Borders]
+
+[sonic:children]
+Spines
+Leaves
+Borders

@@ -1,0 +1,12 @@
+commit 8abf422951c4ce69b5a303009583f6369ec9994f
+tree f1b25ef82601276fb608b3cefe5e173d21497333
+parent 4718cd75af1b422d718c9fa339323e8060efe259
+author t8d7r <t8d7r@protonmail.com> 2022-11-10 10:42:51 +0000
+committer t8d7r <t8d7r@protonmail.com> 2022-11-10 10:42:51 +0000
+
+    with builder
+
+
+:100644 100644 e191844c06596b08b917a545cb29cbf8a537946b c2fa73680d13f819b1e8e2a9efb471fb26050036 M	services_container/jenkins-data/logs/tasks/Fingerprint cleanup.log
+:100644 100644 d24da51a5e095b31e1a2337667168e25ae82dd49 00a6480d14ec987ba50948762c1cc021579de535 M	services_container/jenkins-data/updates/default.json
+:100644 100644 c234c1c73c01642db64be46044b9a2bd7c2064bd e76e8ddbc03381843b6b2c1cf70390396a6969c7 M	services_container/jenkins-data/updates/hudson.plugins.gradle.GradleInstaller
