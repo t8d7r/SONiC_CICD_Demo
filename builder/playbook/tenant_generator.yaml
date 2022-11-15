@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: LEAVES
   connection: local
   gather_facts: no
 
@@ -16,6 +16,13 @@
         name: tenants_mapping
 
     - debug: var=tenants_mapping
+
+    - name: load variable from fabric_modeling.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/fabric_modeling.yaml
+        name: fabric_model
+
+    - debug: var=fabric_model
 
     - name: Building Switchs Vars files
       template:

@@ -1,50 +1,58 @@
 ---
 mapping:
-  - id: 11
-    devices:
-      - LEAF01:
-          access:
-            Eth1/1
-          tagged:
-            Po100
-      - LEAF02:
-          access:
-            Eth1/1
-          tagged:
-            Po100
-  - id: 12
-    devices:
-      - LEAF01:
-          access:
-            Eth1/2
-          tagged:
-            Po100
-      - LEAF02:
-          access:
-            Eth1/1
-          tagged:
-            Po100
-  - id: 21
-    devices:
-      - LEAF03:
-          access:
-            Eth1/1
-          tagged:
-            Po100
-      - LEAF04:
-          access:
-            Eth1/1
-          tagged:
-            Po100
-  - id: 22
-    devices:
-      - LEAF03:
-          access:
-            Eth1/2
-          tagged:
-            Po100
-      - LEAF04:
-          access:
-            Eth1/2
-          tagged:
-            Po100
+  LEAF01:
+    - id: 11
+      access:
+        Eth1/1
+      tagged:
+        Po100
+    - id: 12
+      access:
+        Eth1/2
+      tagged:
+        Po100
+    - id: 1100
+    - id: 1200
+
+  LEAF02:
+    - id: 11
+      access:
+        Eth1/1
+      tagged:
+        Po100
+    - id: 12
+      access:
+        Eth1/2
+      tagged:
+        Po100
+    - id: 1100
+    - id: 1200
+
+  LEAF03:
+    - id: 21
+      access:
+        Eth1/1
+      tagged:
+        Po100
+    - id: 22
+      access:
+        Eth1/2
+      tagged:
+        Po100
+    - id: 1100
+    - id: 1200
+
+  LEAF04:
+    - id: 21
+      access:
+        Eth1/1
+      tagged:
+        Po100
+    - id: 22
+      access:
+        Eth1/2
+      tagged:
+        Po100
+    - id: 1100
+    - id: 1200
+
