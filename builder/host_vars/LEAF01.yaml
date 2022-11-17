@@ -5,7 +5,6 @@ sonic_vlans:
   - vlan_id: 11
   - vlan_id: 12
   - vlan_id: 1100
-  - vlan_id: 1200
 
 sonic_l3_interfaces:
   - name: VLAN_Prod_11
