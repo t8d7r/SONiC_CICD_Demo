@@ -14,16 +14,16 @@ x-frame-options: deny
 x-github-media-type: github.v3; format=json
 x-ratelimit-limit: 60
 x-ratelimit-remaining: 60
-x-ratelimit-reset: 1668694200
+x-ratelimit-reset: 1669138800
 x-ratelimit-resource: core
 x-ratelimit-used: 0
 x-xss-protection: 1; mode=block
-date: Thu, 17 Nov 2022 13:10:01 GMT
+date: Tue, 22 Nov 2022 16:40:01 GMT
 content-length: 465
 accept-ranges: bytes
-x-github-request-id: A47B:666C:393CB5:759D03:637632A9
-OkHttp-Sent-Millis: 1668690601536
-OkHttp-Received-Millis: 1668690601779
+x-github-request-id: F374:3133:296816C:5484423:637CFB61
+OkHttp-Sent-Millis: 1669135201140
+OkHttp-Received-Millis: 1669135201391
 
 TLS_AES_128_GCM_SHA256
 3

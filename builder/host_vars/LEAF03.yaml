@@ -17,6 +17,20 @@ sonic_l3_interfaces:
       anycast_addresses:
         - 192.168.22.254/24
 
+sonic_l2_interface:
+     - name: Eth1/1
+       access:
+         vlan: 21
+     - name: Eth1/2
+       access:
+         vlan: 22
+     - name: Po100
+       tagged:
+         vlan: 21
+         vlan: 22
+['Eth1/1', 'Eth1/2']
+['Po100']
+
 sonic_vrfs:
   - name: Vrf1
     members:
@@ -43,7 +57,5 @@ sonic_vxlans:
       - vni: 11200
         vlan: 1200
     vrf_map:
-      - vni: 11100  
-        vrf: Vrf1
       - vni: 11200  
         vrf: Vrf2

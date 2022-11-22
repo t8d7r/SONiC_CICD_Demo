@@ -5,6 +5,7 @@ sonic_vlans:
   - vlan_id: 11
   - vlan_id: 12
   - vlan_id: 1100
+  - vlan_id: 1200
 
 sonic_l3_interfaces:
   - name: VLAN_Prod_11
@@ -16,16 +17,30 @@ sonic_l3_interfaces:
       anycast_addresses:
         - 192.168.12.254/24
 
+sonic_l2_interface:
+     - name: Eth1/1
+       access:
+         vlan: 11
+     - name: Eth1/2
+       access:
+         vlan: 12
+     - name: Po100
+       tagged:
+         vlan: 11
+         vlan: 12
+['Eth1/1', 'Eth1/2']
+['Po100']
+
 sonic_vrfs:
   - name: Vrf1
     members:
       interfaces:
         - name: Vlan11
+        - name: Vlan12
         - name: Vlan1100
   - name: Vrf2
     members:
       interfaces:
-        - name: Vlan12
         - name: Vlan1200
 
 sonic_vxlans:
@@ -35,14 +50,12 @@ sonic_vxlans:
     vlan_map:
       - vni: 10011
         vlan: 11
-      - vni: 10012
+      - vni: 10011
         vlan: 12
       - vni: 11100
         vlan: 1100
       - vni: 11200
         vlan: 1200
     vrf_map:
-      - vni: 11100  
-        vrf: Vrf1
       - vni: 11200  
         vrf: Vrf2
