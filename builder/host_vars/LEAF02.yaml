@@ -28,8 +28,6 @@ sonic_l2_interface:
        tagged:
          vlan: 11
          vlan: 12
-['Eth1/1', 'Eth1/2']
-['Po100']
 
 sonic_vrfs:
   - name: Vrf1

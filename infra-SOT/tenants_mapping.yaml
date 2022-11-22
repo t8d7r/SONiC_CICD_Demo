@@ -2,9 +2,9 @@
 mapping:
   LEAF01:
     - id: 11
-      access: 
+      access:
         - Eth1/1
-      tagged: 
+      tagged:
         - Po100
     - id: 12
       access: 

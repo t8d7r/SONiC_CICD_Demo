@@ -1,6 +1,6 @@
 Started by timer
-[Tue Nov 22 19:30:00 UTC 2022] Starting branch indexing...
-[8mha:////4CBkQ8OqkCUu5KZXDLY8KoZ2IO15KSf0kWe63F/T/wfBAAAAhR+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTLgotzdwAANrw4pY4AAAA=[0mConnecting to https://api.github.com with no credentials, anonymous access
+[Tue Nov 22 20:30:00 UTC 2022] Starting branch indexing...
+[8mha:////4DRIZOSZrg/gdO7g2RUuEEJAaPiLHNeyIsMOqJEwGQXVAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHTLQo6WNQCJqAYejgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
 Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWHQyCgpKSi20tdPzyzJKE0C6srVL7FIMS/SD/b3y3SOd/Z0dol3Sc3NBwC7A0h7rQAAAA==[0mt8d7r/SONiC_CICD_Demo
 
   Checking branches...
@@ -12,7 +12,7 @@ Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAA
   Getting remote pull requests...
       ‘Jenkinsfile’ found
     Met criteria
-No changes detected: main (still at 8028392c6fa96192c3422027af06a8fdd155f574)
+No changes detected: main (still at 68be530120234e7937e63888db993e54005ba09b)
 
   1 branches were processed
 
@@ -22,5 +22,5 @@ No changes detected: main (still at 8028392c6fa96192c3422027af06a8fdd155f574)
 
 Finished examining t8d7r/SONiC_CICD_Demo
 
-[Tue Nov 22 19:30:06 UTC 2022] Finished branch indexing. Indexing took 5.1 sec
+[Tue Nov 22 20:30:05 UTC 2022] Finished branch indexing. Indexing took 4.3 sec
 Finished: SUCCESS
