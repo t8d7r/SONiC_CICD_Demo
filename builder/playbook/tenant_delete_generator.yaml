@@ -1,0 +1,15 @@
+- hosts: LEAF01
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: generate host_var to delete
+      script: "../tools/tenant_delete_vars_gen.py {{ inventory_hostname }}"
+      args:
+        executable: /usr/bin/python3
+      register: outcome
+
+    - set_fact:
+        outcome: "{{ outcome.stdout|from_yaml }}"
+   
+    - debug: var=outcome

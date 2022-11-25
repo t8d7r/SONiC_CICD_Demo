@@ -1,0 +1,16 @@
+---
+- hosts: LEAVES
+  gather_facts: False
+  connection: httpapi
+  collections:
+    - dellemc.enterprise_sonic
+
+  tasks:
+  - name: Configure Vlans
+    sonic_vlans:
+      config: "{{sonic_vlans}}"
+      state: merged
+    when: sonic_vlans is defined and sonic_vlans
+    register: result
+    tags:
+      - vlans

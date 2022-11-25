@@ -1,0 +1,31 @@
+- hosts: LEAVES
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: load variable from tenants.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/tenants.yaml
+        name: tenants
+
+    - debug: var=tenants
+
+    - name: load variable from tenants_mapping.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/tenants_mapping.yaml
+        name: tenants_mapping
+
+    - debug: var=tenants_mapping
+
+    - name: load variable from fabric_modeling.yaml
+      ansible.builtin.include_vars:
+        file: ../../infra-SOT/fabric_modeling.yaml
+        name: fabric_model
+
+    - debug: var=fabric_model
+
+    - name: Building Switchs Vars files
+      template:
+        src=../template/tenant_update_template.j2
+        dest=../host_vars/{{inventory_hostname}}.yaml
+

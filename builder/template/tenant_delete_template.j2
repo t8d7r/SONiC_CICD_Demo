@@ -1,0 +1,41 @@
+---
+switch_role: leaf
+
+sonic_vlans:
+{%- if vlan_to_delete != None %}
+{%- for vlan in vlan_to_delete %}
+  - vlan_id: {{ vlan }}
+{%- endfor %}
+{%- endif %}
+
+sonic_l3_interfaces:
+{%- if vlan_to_delete != None %}
+{%- for vlan in vlan_to_delete %}
+{%- if vlan_to_delete[vlan] != None %}
+  - name: Vlan{{ vlan }}
+    ipv4:
+      anycast_addresses:
+        - {{ vlan_to_delete[vlan]['gateway'] }}{{ vlan_to_delete[vlan]['network'][-3:] }}
+{%- endif %}
+{%- endfor %}
+{%- endif %}
+
+sonic_l2_interfaces:
+{%- if l2_to_delete != None %}
+{%- for interface in l2_to_delete %}
+  - name: {{ interface }}
+{%- if 'access' in l2_to_delete[interface] %}
+    access:
+{%- for vlan in l2_to_delete[interface]['access'] %}
+      vlan: {{ vlan }}
+{%- endfor %}
+{%- endif %}
+{%- if 'tagged' in l2_to_delete[interface] %}
+    tagged:
+{%- for vlan in l2_to_delete[interface]['tagged'] %}
+      vlan: {{ vlan }}
+{%- endfor %}
+{%- endif %}
+{%- endfor %}
+{%- endif %}
+ 

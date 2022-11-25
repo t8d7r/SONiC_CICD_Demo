@@ -2,38 +2,28 @@
 switch_role: leaf
 
 sonic_vlans:
-  - vlan_id: 11
   - vlan_id: 12
   - vlan_id: 1100
   - vlan_id: 1200
 
 sonic_l3_interfaces:
-  - name: VLAN_Prod_11
-    ipv4:
-      anycast_addresses:
-        - 192.168.11.254/24
   - name: VLAN_Prod_12
     ipv4:
       anycast_addresses:
         - 192.168.12.254/24
 
 sonic_l2_interface:
-     - name: Eth1/1
-       access:
-         vlan: 11
      - name: Eth1/2
        access:
          vlan: 12
      - name: Po100
        tagged:
-         vlan: 11
          vlan: 12
 
 sonic_vrfs:
   - name: Vrf1
     members:
       interfaces:
-        - name: Vlan11
         - name: Vlan12
         - name: Vlan1100
   - name: Vrf2
@@ -46,8 +36,6 @@ sonic_vxlans:
     source_ip: 10.1.0.1 
     evpn_nvo: nvo1
     vlan_map:
-      - vni: 10011
-        vlan: 11
       - vni: 10011
         vlan: 12
       - vni: 11100
