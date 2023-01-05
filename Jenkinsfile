@@ -56,6 +56,7 @@ pipeline {
             steps {
                 dir('builder'){
                      sh 'ansible-playbook playbook/tenant_update_generator.yaml -v'
+		     sh 'cat host_vars/LEAF01.yaml'
                      sh 'yamllint ../builder/host_vars/*'
                 }
             }
