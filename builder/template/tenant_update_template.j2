@@ -75,7 +75,7 @@ sonic_vxlans:
 {%- for vrf in tenants['vrfs_list'] %}
 {%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
 {%- if vrf['name'] == tenants['vlans_list'][vlan['id']]['vrf'] and vrf['name'] not in vrf_list and tenants['vlans_list'][vlan['id']]['type'] == "l3vni" %}
-      - vni: {{ tenants['vlans_list'][vlan['id']]['vni'] }}  
+      - vni: {{ tenants['vlans_list'][vlan['id']]['vni'] }}
         vrf: {{ vrf['name'] }}
 {%- set vrf_list = vrf_list.append(vrf['name']) %}
 {%- endif %}
