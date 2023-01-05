@@ -33,7 +33,7 @@ sonic_l2_interfaces:
     trunk:
       allowed_vlans:
 {%- for vlan in  if_dict[interface]['tagged'] %}
-         - vlan: {{ vlan | int }}
+        - vlan: {{ vlan | int }}
 {%- endfor %}
 {%- endif %}
 {%- endfor %}
