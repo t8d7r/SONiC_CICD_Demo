@@ -14,8 +14,3 @@
       template:
         src=../template/inventory_template.j2
         dest=../inventory
-
-    - name: Building Switchs Vars files
-      template:
-        src=../template/delete_inventory_template.j2
-        dest=../deleteinventory

@@ -18,7 +18,7 @@ pipeline {
                 sh 'yamllint infra-SOT/*'
             }
         }
-        stage('Build variables'){
+        stage('Build delete variables'){
             when {
                 anyOf {
                     changeset "infra-SOT/tenants_mapping.yaml"
@@ -27,12 +27,12 @@ pipeline {
             }
             steps {
                 dir('builder'){
-                     sh 'ansible-playbook playbook/tenant_delete_generator.yaml -i deleteinventory -v'
-                     sh 'ansible-playbook playbook/tenant_update_generator.yaml -i inventory -v'
+                     sh 'ansible-playbook playbook/tenant_delete_generator.yaml -v'
+		     sh 'yamllint builder/host_vars/*
                 }
             }
         }
-	stage('Check generated variables files'){
+	stage('Deploy delete vars'){
            when {
                 anyOf {
                     changeset "infra-SOT/tenants_mapping.yaml"
@@ -40,7 +40,9 @@ pipeline {
                 }
             }
             steps {
-                sh 'yamllint builder/host_vars/*'
+                dir('builder'){
+                     sh 'ansible-playbook playbook/tenant-delete.yaml -v'
+                }
             }
         }
 
