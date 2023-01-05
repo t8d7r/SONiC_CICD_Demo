@@ -15,7 +15,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'yamllint infra-SOT/tenants_mapping.yaml -v'
+                sh 'yamllint infra-SOT/* -v'
             }
         }
     }
