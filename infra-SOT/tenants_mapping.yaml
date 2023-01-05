@@ -1,9 +1,14 @@
 ---
 mapping:
   LEAF01:
+    - id: 11
+      access:
+        - Eth1/3
+      tagged:
+        - Po100
     - id: 12
       access: 
-        - Eth1/2
+        - Eth1/4
       tagged: 
         - Po100
     - id: 1100
@@ -12,12 +17,12 @@ mapping:
   LEAF02:
     - id: 11
       access: 
-        - Eth1/1
+        - Eth1/3
       tagged: 
         - Po100
     - id: 12
       access: 
-        - Eth1/2
+        - Eth1/4
       tagged: 
         - Po100
     - id: 1100
@@ -26,12 +31,12 @@ mapping:
   LEAF03:
     - id: 21
       access: 
-        - Eth1/1
+        - Eth1/3
       tagged: 
         - Po100
     - id: 22
       access: 
-        - Eth1/2
+        - Eth1/4
       tagged: 
         - Po100
     - id: 1100
@@ -40,12 +45,12 @@ mapping:
   LEAF04:
     - id: 21
       access: 
-        - Eth1/1
+        - Eth1/3
       tagged: 
         - Po100
     - id: 22
       access: 
-        - Eth1/2
+        - Eth1/4
       tagged: 
         - Po100
     - id: 1100

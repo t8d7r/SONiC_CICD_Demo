@@ -3,29 +3,13 @@
   gather_facts: no
 
   tasks:
-    - name: load variable from tenants.yaml
-      ansible.builtin.include_vars:
-        file: ../../infra-SOT/tenants.yaml
-        name: tenants
+    - name: generate host_var to update
+      script: "../tools/tenant_update_vars_gen.py {{ inventory_hostname }}"
+      args:
+        executable: /usr/bin/python3
+      register: outcome
 
-    - debug: var=tenants
+    - set_fact:
+        outcome: "{{ outcome.stdout|from_yaml }}"
 
-    - name: load variable from tenants_mapping.yaml
-      ansible.builtin.include_vars:
-        file: ../../infra-SOT/tenants_mapping.yaml
-        name: tenants_mapping
-
-    - debug: var=tenants_mapping
-
-    - name: load variable from fabric_modeling.yaml
-      ansible.builtin.include_vars:
-        file: ../../infra-SOT/fabric_modeling.yaml
-        name: fabric_model
-
-    - debug: var=fabric_model
-
-    - name: Building Switchs Vars files
-      template:
-        src=../template/tenant_update_template.j2
-        dest=../host_vars/{{inventory_hostname}}.yaml
-
+    - debug: var=outcome

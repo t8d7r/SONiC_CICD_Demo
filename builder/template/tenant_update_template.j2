@@ -1,71 +1,84 @@
 ---
 switch_role: leaf
-{% set ns = namespace() %}
+{%- set ns = namespace() %}
 
 sonic_vlans:
-{% if tenants_mapping['mapping'] != None and tenants_mapping['mapping'][inventory_hostname] != None %}
-{% for vlan in tenants_mapping['mapping'][inventory_hostname] %}
+{%- if tenants_mapping['mapping'] != None and tenants_mapping['mapping'][inventory_hostname] != None %}
+{%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
   - vlan_id: {{ vlan['id'] }}
-{% endfor %}
-{% endif %}
+{%- endfor %}
+{%- endif %}
 
 sonic_l3_interfaces:
-{% if tenants_mapping['mapping'] != None and tenants_mapping['mapping'][inventory_hostname] != None %}
-{% for vlan in tenants_mapping['mapping'][inventory_hostname] %}
-{% if vlan['id'] != None and vlan['id'] != None and tenants['vlans_list'][vlan['id']]['name'] != None and tenants['vlans_list'][vlan['id']]['gateway'] != None %}
+{%- if tenants_mapping['mapping'] != None and tenants_mapping['mapping'][inventory_hostname] != None %}
+{%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
+{%- if vlan['id'] != None and vlan['id'] != None and tenants['vlans_list'][vlan['id']]['name'] != None and tenants['vlans_list'][vlan['id']]['gateway'] != None %}
   - name: {{ tenants['vlans_list'][vlan['id']]['name'] }}
     ipv4:
       anycast_addresses:
         - {{ tenants['vlans_list'][vlan['id']]['gateway'] }}{{  tenants['vlans_list'][vlan['id']]['network'][-3:] }}
-{% endif %}
-{% endfor %}
-{% endif %}
+{%- endif %}
+{%- endfor %}
+{%- endif %}
 
-sonic_l2_interface:
+sonic_l2_interfaces:
 {%- if if_dict != None %}
 {%- for interface in if_dict %}
      - name: {{ interface }}
 {%- if 'access' in if_dict[interface] %}
        access:
+         vlan: {{ if_dict[interface]['access'][0] | int }}
+{%- endif %}
+{%- if 'tagged' in if_dict[interface] %}
+       trunk:
+         allowed_vlans:
+{%- for vlan in  if_dict[interface]['tagged'] %}
+            - vlan: {{ vlan | int }}
+{%- endfor %}
 {%- endif %}
 {%- endfor %}
 {%- endif %}
 
 sonic_vrfs:
-{% set vrf_list = [] %}
-{% for vrf in tenants['vrfs_list'] %}
-{% for vlan in tenants_mapping['mapping'][inventory_hostname] %}
-{% if vrf['name'] == tenants['vlans_list'][vlan['id']]['vrf'] and vrf['name'] not in vrf_list %}
+{%- set vrf_list = [] %}
+{%- for vrf in tenants['vrfs_list'] %}
+{%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
+{%- if vrf['name'] == tenants['vlans_list'][vlan['id']]['vrf'] and vrf['name'] not in vrf_list %}
   - name: {{ vrf['name'] }}
-{% set vrf_list = vrf_list.append(vrf['name']) %}
-{% endif %}
-{% endfor %}
+{%- set vrf_list = vrf_list.append(vrf['name']) %}
+{%- endif %}
+{%- endfor %}
     members:
       interfaces:
-{% for vlan in tenants_mapping['mapping'][inventory_hostname] %}
-{% if  tenants['vlans_list'][vlan['id']]['vrf'] == vrf['name'] %}
+{%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
+{%- if  tenants['vlans_list'][vlan['id']]['vrf'] == vrf['name'] %}
         - name: Vlan{{vlan['id']}}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
 
 sonic_vxlans:
   - name: vtep1
-    source_ip: {{ fabric_model[group_names[0]][inventory_hostname]['Lo_vtep'][:-3] }} 
+{%- for sw_type in fabric_model %}
+{%- if fabric_model[sw_type] != None and inventory_hostname in fabric_model[sw_type].keys() %}
+    source_ip: {{ fabric_model[sw_type][inventory_hostname]['Lo_vtep'][:-3] }}
+{%- endif %}
+{%- endfor %}
     evpn_nvo: nvo1
     vlan_map:
-{% for vlan in tenants_mapping['mapping'][inventory_hostname] %}
+{%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
       - vni: {{  tenants['vlans_list'][vlan['id']]['vni'] }}
         vlan: {{ vlan['id'] }}
-{% endfor %}
+{%- endfor %}
     vrf_map:
-{% set vrf_list = [] %}
-{% for vrf in tenants['vrfs_list'] %}
-{% for vlan in tenants_mapping['mapping'][inventory_hostname] %}
-{% if vrf['name'] == tenants['vlans_list'][vlan['id']]['vrf'] and vrf['name'] not in vrf_list and tenants['vlans_list'][vlan['id']]['type'] == "l3vni" %}
+{%- set vrf_list = [] %}
+{%- for vrf in tenants['vrfs_list'] %}
+{%- for vlan in tenants_mapping['mapping'][inventory_hostname] %}
+{%- if vrf['name'] == tenants['vlans_list'][vlan['id']]['vrf'] and vrf['name'] not in vrf_list and tenants['vlans_list'][vlan['id']]['type'] == "l3vni" %}
       - vni: {{ tenants['vlans_list'][vlan['id']]['vni'] }}  
         vrf: {{ vrf['name'] }}
-{% set vrf_list = vrf_list.append(vrf['name']) %}
-{% endif %}
-{% endfor %}
-{% endfor %}
+{%- set vrf_list = vrf_list.append(vrf['name']) %}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
+

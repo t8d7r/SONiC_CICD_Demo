@@ -1,9 +1,9 @@
 SPINE01 ansible_host=172.16.100.59
 SPINE02 ansible_host=172.16.100.63
-LEAF01 ansible_host=172.16.100.57
-LEAF02 ansible_host=172.16.100.60
-LEAF03 ansible_host=172.16.100.61
-LEAF04 ansible_host=172.16.100.62
+LEAF01 ansible_host=172.16.100.44
+LEAF02 ansible_host=172.16.100.45
+LEAF03 ansible_host=172.16.100.47
+LEAF04 ansible_host=172.16.100.49
 
 [SPINES]
 SPINE01

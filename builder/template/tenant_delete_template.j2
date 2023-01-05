@@ -32,10 +32,11 @@ sonic_l2_interfaces:
 {%- endif %}
 {%- if 'tagged' in l2_to_delete[interface] %}
     tagged:
+      allowed_vlans:
 {%- for vlan in l2_to_delete[interface]['tagged'] %}
-      vlan: {{ vlan }}
+         - vlan: {{ vlan }}
 {%- endfor %}
 {%- endif %}
 {%- endfor %}
 {%- endif %}
- 
+

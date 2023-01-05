@@ -17,16 +17,17 @@ sonic_l3_interfaces:
       anycast_addresses:
         - 192.168.12.254/24
 
-sonic_l2_interface:
-     - name: Eth1/1
+sonic_l2_interfaces:
+     - name: Eth1/3
        access:
          vlan: 11
-     - name: Eth1/2
-       access:
-         vlan: 12
      - name: Po100
-       tagged:
-         vlan: 11
+       trunk:
+         allowed_vlans:
+            - vlan: 11
+            - vlan: 12
+     - name: Eth1/4
+       access:
          vlan: 12
 
 sonic_vrfs:
@@ -43,12 +44,12 @@ sonic_vrfs:
 
 sonic_vxlans:
   - name: vtep1
-    source_ip: 10.1.0.1 
+    source_ip: 10.1.0.1
     evpn_nvo: nvo1
     vlan_map:
       - vni: 10011
         vlan: 11
-      - vni: 10011
+      - vni: 10012
         vlan: 12
       - vni: 11100
         vlan: 1100

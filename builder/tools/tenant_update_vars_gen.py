@@ -48,8 +48,11 @@ def reverse_mapping(mapping,hostname):
 
 tenants_mapping =  load_yaml_file(path_sot+'/tenants_mapping.yaml')
 tenants =  load_yaml_file(path_sot+'/tenants.yaml')
+fabric_model = load_yaml_file(path_sot+'/fabric_modeling.yaml')
 if_dict = reverse_mapping(tenants_mapping,hostname)
 
-vgf = jinja2.Environment(loader=jinja2.FileSystemLoader(path_template)).get_template('tenant_update_template.j2').render(inventory_hostname = hostname, if_dict = if_dict, tenants_mapping = tenants_mapping, tenants = tenants)
-print (if_dict)
+vgf = jinja2.Environment(loader=jinja2.FileSystemLoader(path_template)).get_template('tenant_update_template.j2').render(inventory_hostname = hostname, if_dict = if_dict, tenants_mapping = tenants_mapping, tenants = tenants, fabric_model = fabric_model)
+
+with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
+print (vgf)
 

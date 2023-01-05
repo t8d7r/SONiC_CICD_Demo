@@ -11,7 +11,7 @@ vlans_list:
     name: VLAN_Prod_12
     network: 192.168.12.0/24
     gateway: 192.168.12.254
-    vni: 10011
+    vni: 10012
     vrf: Vrf1
     type: l2vni
   21:
@@ -19,7 +19,7 @@ vlans_list:
     network: 192.168.21.0/24
     gateway: 192.168.21.254
     vni: 10021
-    vrf: Vrf1
+    vrf: Vrf2
     type: l2vni
   22:
     name: VLAN_Prod_22
