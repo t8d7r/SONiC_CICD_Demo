@@ -18,7 +18,7 @@ pipeline {
                 sh 'yamllint infra-SOT/*'
             }
         }
-        stage('Check syntax'){
+        stage('Build variables'){
             when {
                 anyOf {
                     changeset "infra-SOT/tenants_mapping.yaml"
