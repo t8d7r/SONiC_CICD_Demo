@@ -7,7 +7,7 @@ mapping:
       tagged:
         - Po100
     - id: 12
-      access: 
+      access:
         - Eth1/4
       tagged:
         - Po100
@@ -21,39 +21,38 @@ mapping:
       tagged:
         - Po100
     - id: 12
-      access: 
+      access:
         - Eth1/4
-      tagged: 
+      tagged:
         - Po100
     - id: 1100
     - id: 1200
 
   LEAF03:
     - id: 21
-      access: 
+      access:
         - Eth1/3
-      tagged: 
+      tagged:
         - Po100
     - id: 22
-      access: 
+      access:
         - Eth1/4
-      tagged: 
+      tagged:
         - Po100
     - id: 1100
     - id: 1200
 
   LEAF04:
     - id: 21
-      access: 
+      access:
         - Eth1/3
-      tagged: 
+      tagged:
         - Po100
     - id: 22
-      access: 
+      access:
         - Eth1/4
-      tagged: 
+      tagged:
         - Po100
     - id: 1100
     - id: 1200
 
-  LEAF05:
