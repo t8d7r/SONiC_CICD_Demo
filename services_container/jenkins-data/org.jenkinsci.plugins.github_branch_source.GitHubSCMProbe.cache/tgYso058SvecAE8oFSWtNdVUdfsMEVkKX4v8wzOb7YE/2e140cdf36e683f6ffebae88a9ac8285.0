@@ -5,15 +5,12 @@ Accept: application/vnd.github.v3+json
 Accept-Encoding: gzip
 HTTP/1.1 200 
 28
-content-type: application/json; charset=utf-8
-content-encoding: gzip
-accept-ranges: bytes
-content-length: 729
 server: GitHub.com
-date: Thu, 05 Jan 2023 14:46:01 GMT
+date: Thu, 05 Jan 2023 14:51:02 GMT
+content-type: application/json; charset=utf-8
 cache-control: public, max-age=60, s-maxage=60
 vary: Accept, Accept-Encoding, Accept, X-Requested-With
-etag: W/"aabe8265137715f3b01e5563833cb6b3540a812b"
+etag: W/"2c96574095e2ec8583394f7bcc3b96eb45fa229a"
 last-modified: Fri, 21 Oct 2022 08:13:26 GMT
 x-github-media-type: github.v3; format=json
 x-github-api-version-selected: 2022-11-28
@@ -25,14 +22,17 @@ x-content-type-options: nosniff
 x-xss-protection: 0
 referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
 content-security-policy: default-src 'none'
+content-encoding: gzip
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 38
+x-ratelimit-remaining: 32
 x-ratelimit-reset: 1672932338
 x-ratelimit-resource: core
-x-ratelimit-used: 22
-x-github-request-id: B5DE:27C7:37A3FED:71ED58E:63B6E2A9
-OkHttp-Sent-Millis: 1672929961626
-OkHttp-Received-Millis: 1672929961815
+x-ratelimit-used: 28
+accept-ranges: bytes
+content-length: 732
+x-github-request-id: FFDE:270A:3ABBFCA:7827692:63B6E3D6
+OkHttp-Sent-Millis: 1672930262621
+OkHttp-Received-Millis: 1672930262925
 
 TLS_AES_128_GCM_SHA256
 3
