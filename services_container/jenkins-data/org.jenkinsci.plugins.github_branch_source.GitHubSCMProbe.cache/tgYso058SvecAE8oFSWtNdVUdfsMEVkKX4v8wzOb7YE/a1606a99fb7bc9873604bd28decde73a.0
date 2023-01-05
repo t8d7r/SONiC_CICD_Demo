@@ -10,7 +10,7 @@ content-encoding: gzip
 accept-ranges: bytes
 content-length: 1220
 server: GitHub.com
-date: Thu, 05 Jan 2023 17:49:16 GMT
+date: Thu, 05 Jan 2023 17:51:04 GMT
 cache-control: public, max-age=60, s-maxage=60
 vary: Accept, Accept-Encoding, Accept, X-Requested-With
 etag: W/"7bf8beba7a1516168cae52d06f581c7a1e25cd2c2bb20c45a94f29ac5850714a"
@@ -26,13 +26,13 @@ x-xss-protection: 0
 referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
 content-security-policy: default-src 'none'
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 55
 x-ratelimit-reset: 1672944557
 x-ratelimit-resource: core
-x-ratelimit-used: 2
-x-github-request-id: D54F:3318:3F6DD54:81B95EA:63B70D9C
-OkHttp-Sent-Millis: 1672940957105
-OkHttp-Received-Millis: 1672940957226
+x-ratelimit-used: 5
+x-github-request-id: D54F:3318:3F79B54:81D1972:63B70E0C
+OkHttp-Sent-Millis: 1672941068078
+OkHttp-Received-Millis: 1672941068199
 
 TLS_AES_128_GCM_SHA256
 3
