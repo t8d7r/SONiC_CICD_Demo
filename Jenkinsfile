@@ -28,7 +28,7 @@ pipeline {
             steps {
                 dir('builder'){
                      sh 'ansible-playbook playbook/tenant_delete_generator.yaml -v'
-		     sh 'yamllint builder/host_vars/*
+		     sh 'yamllint builder/host_vars/*'
                 }
             }
         }
