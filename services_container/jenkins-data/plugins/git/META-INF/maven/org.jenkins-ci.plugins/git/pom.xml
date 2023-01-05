@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>git</artifactId>
-  <version>4.13.0</version>
+  <version>4.14.3</version>
   <packaging>hpi</packaging>
   <name>Git plugin</name>
   <description>Integrates Jenkins with Git SCM</description>
@@ -45,7 +45,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/git-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/git-plugin.git</developerConnection>
-    <tag>git-4.13.0</tag>
+    <tag>git-4.14.3</tag>
     <url>https://github.com/jenkinsci/git-plugin</url>
   </scm>
   <distributionManagement>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>git-client</artifactId>
-      <version>3.11.0</version>
+      <version>3.13.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -92,7 +92,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>script-security</artifactId>
-      <version>1189.vb_a_b_7c8fd5fde</version>
+      <version>1218.v39ca_7f7ed0a_c</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -117,7 +117,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>mailer</artifactId>
-      <version>435.v79ef3972b_5c7</version>
+      <version>435.438.v5b_81173f5b_a_1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -129,28 +129,28 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>parameterized-trigger</artifactId>
-      <version>2.39</version>
+      <version>2.43.1</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>token-macro</artifactId>
-      <version>308.v4f2b_ed62b_b_16</version>
+      <version>321.vd7cc1f2a_52c8</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>promoted-builds</artifactId>
-      <version>3.10.1</version>
+      <version>3.11</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>io.jenkins</groupId>
       <artifactId>configuration-as-code</artifactId>
-      <version>1559.v38a_b_2e3b_6b_b_7</version>
+      <version>1569.vb_72405b_80249</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
@@ -171,13 +171,6 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.jcip</groupId>
-      <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
-      <scope>provided</scope>
-      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.codehaus.mojo</groupId>

@@ -4,13 +4,13 @@ Build-Jdk-Spec: 11
 Specification-Title: Pipeline: Nodes and Processes
 Specification-Version: 0.0
 Implementation-Title: Pipeline: Nodes and Processes
-Implementation-Version: 1210.va_1e5d77e122b
+Implementation-Version: 1217.v38306d8fa_b_5c
 Group-Id: org.jenkins-ci.plugins.workflow
 Short-Name: workflow-durable-task-step
 Long-Name: Pipeline: Nodes and Processes
 Url: https://github.com/jenkinsci/workflow-durable-task-step-plugin
 Compatible-Since-Version: 2.40
-Plugin-Version: 1210.va_1e5d77e122b
+Plugin-Version: 1217.v38306d8fa_b_5c
 Hudson-Version: 2.346.1
 Jenkins-Version: 2.346.1
 Plugin-Dependencies: workflow-api:1200.v8005c684b_a_c6,workflow-step-api

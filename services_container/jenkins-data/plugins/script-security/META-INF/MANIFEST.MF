@@ -4,15 +4,15 @@ Build-Jdk-Spec: 11
 Specification-Title: Script Security Plugin
 Specification-Version: 0.0
 Implementation-Title: Script Security Plugin
-Implementation-Version: 1189.vb_a_b_7c8fd5fde
+Implementation-Version: 1228.vd93135a_2fb_25
 Group-Id: org.jenkins-ci.plugins
 Short-Name: script-security
 Long-Name: Script Security Plugin
 Url: https://github.com/jenkinsci/script-security-plugin
-Plugin-Version: 1189.vb_a_b_7c8fd5fde
-Hudson-Version: 2.332.1
-Jenkins-Version: 2.332.1
-Plugin-Dependencies: caffeine-api:2.9.2-29.v717aac953ff3
+Plugin-Version: 1228.vd93135a_2fb_25
+Hudson-Version: 2.346.1
+Jenkins-Version: 2.346.1
+Plugin-Dependencies: caffeine-api:2.9.3-65.v6a_47d0f4d1fe
 Plugin-Developers: 
 Plugin-License-Name: MIT License
 Plugin-License-Url: https://opensource.org/licenses/MIT

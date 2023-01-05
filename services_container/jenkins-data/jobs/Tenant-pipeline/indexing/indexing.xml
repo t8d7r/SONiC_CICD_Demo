@@ -1,10 +1,12 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<jenkins.branch.MultiBranchProject_-BranchIndexing plugin="branch-api@2.1046.v0ca_37783ecc5">
+<jenkins.branch.MultiBranchProject_-BranchIndexing plugin="branch-api@2.1051.v9985666b_f6cc">
   <actions>
     <hudson.model.CauseAction>
       <causeBag class="linked-hash-map">
         <entry>
-          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>thomas</userId>
+          </hudson.model.Cause_-UserIdCause>
           <int>1</int>
         </entry>
       </causeBag>
@@ -17,8 +19,8 @@
     <completeBuild>true</completeBuild>
   </result>
   <durations>
-    <long>1000</long>
+    <long>3162</long>
   </durations>
-  <timestamp>1672942920875</timestamp>
-  <duration>1000</duration>
+  <timestamp>1672945877576</timestamp>
+  <duration>3162</duration>
 </jenkins.branch.MultiBranchProject_-BranchIndexing>

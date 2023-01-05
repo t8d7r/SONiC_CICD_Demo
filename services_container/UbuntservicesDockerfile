@@ -1,6 +1,7 @@
 FROM ubuntu:latest
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Paris
 RUN apt-get update
-RUN apt-get install -y ansible
 RUN apt install -y default-jdk
 RUN apt install -y curl
 RUN apt install -y git
@@ -8,4 +9,6 @@ RUN apt install -y yamllint
 RUN apt install -y sshpass
 RUN apt install -y python3-pip
 RUN apt install -y ansible-core
-RUN apt isntall -y pip3 install -Iv 'resolvelib<0.6.0' 
+RUN pip3 install -Iv 'resolvelib<0.6.0'
+RUN pip3 install jinja2
+RUN ansible-galaxy collection install 'dellemc.enterprise_sonic:>=2.0.0'

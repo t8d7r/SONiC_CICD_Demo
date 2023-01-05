@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pipeline-input-step</artifactId>
-  <version>456.vd8a_957db_5b_e9</version>
+  <version>466.v6d0a_5df34f81</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Input Step</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/pipeline-input-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-input-step-plugin.git</developerConnection>
-    <tag>d8a957db5be95ddfbf81f41a60b2f034000314b5</tag>
+    <tag>6d0a5df34f81fe185d7ad4a2e3aab1de4028c224</tag>
     <url>https://github.com/jenkinsci/pipeline-input-step-plugin</url>
   </scm>
   <distributionManagement>
@@ -82,13 +82,6 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>net.jcip</groupId>
-      <artifactId>jcip-annotations</artifactId>
-      <version>1.0</version>
-      <scope>provided</scope>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
       <version>1.22</version>
@@ -113,13 +106,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.34</version>
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>org.kohsuke.stapler</groupId>
-        <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.19</version>
+        <version>3.35</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

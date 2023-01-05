@@ -12,12 +12,12 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@716.vc692a_e52371b_">
-      <branch plugin="branch-api@2.1046.v0ca_37783ecc5">
+      <branch plugin="branch-api@2.1051.v9985666b_f6cc">
         <sourceId>1971ad85-f603-4272-a013-18f928872c29</sourceId>
         <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@1696.v3a_7603564d04">
           <name>main</name>
         </head>
-        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.13.0">
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.14.3">
           <configVersion>2</configVersion>
           <userRemoteConfigs>
             <hudson.plugins.git.UserRemoteConfig>
@@ -48,11 +48,11 @@
             <iconClassName>icon-github-branch</iconClassName>
             <url>https://github.com/t8d7r/SONiC_CICD_Demo/tree/main</url>
           </org.jenkinsci.plugins.github__branch__source.GitHubLink>
-          <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@621.vda_a_b_055e58f7">
+          <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@631.v9143df5b_e4a_a">
             <objectDisplayName>main</objectDisplayName>
             <objectUrl>https://github.com/t8d7r/SONiC_CICD_Demo/tree/main</objectUrl>
           </jenkins.scm.api.metadata.ObjectMetadataAction>
-          <jenkins.scm.api.metadata.PrimaryInstanceMetadataAction plugin="scm-api@621.vda_a_b_055e58f7"/>
+          <jenkins.scm.api.metadata.PrimaryInstanceMetadataAction plugin="scm-api@631.v9143df5b_e4a_a"/>
         </actions>
       </branch>
     </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
