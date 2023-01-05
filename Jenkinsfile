@@ -40,7 +40,7 @@ pipeline {
                 }
             }
             steps {
-                sh ''yamllint builder/host_vars/*'
+                sh 'yamllint builder/host_vars/*'
             }
         }
 
