@@ -1,6 +1,9 @@
 Started by timer
-[Thu Jan 05 14:36:00 UTC 2023] Starting branch indexing...
-[8mha:////4Gd3kpNy8mlBED+zylxoxu/4Aw37eT8ARIaXgI6JthEkAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU4z1GwBi9NXvjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+Started by timer
+Started by timer
+Started by timer
+[Thu Jan 05 14:40:17 UTC 2023] Starting branch indexing...
+[8mha:////4JfZKYSD5YvNs+zqmaYUat2jT6DT9IPrR4bK1wdjUoBrAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU4LKdwDkL5uFjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
 Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWHQyCgpKSi20tdPzyzJKE0C6srVL7FIMS/SD/b3y3SOd/Z0dol3Sc3NBwC7A0h7rQAAAA==[0mt8d7r/SONiC_CICD_Demo
 
   Checking branches...
@@ -10,5 +13,5 @@ Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAA
     Checking branch [8mha:////4DkqS5a+dQ1ulMz3penh4XSYDK87u4+D/SJkRtsr5hLqAAAAsh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKWEwyigpKSi20tdPzyzJKE0C6srVL7FIMS/SD/b3y3SOd/Z0dol3Sc3N1y8pSk3Vz03MzAMADCNlv7cAAAA=[0mmain
 
   Getting remote pull requests...
-[8mha:////4Lcd8QTz/UUrGTOxYoXa1AE9keQqOonehWPV0Nqq0+hZAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU4zdDAACtcrFjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 46 remaining (1 over budget). Next quota of 60 in 49 min. Sleeping for 4 min 15 sec.
-[8mha:////4Lcd8QTz/UUrGTOxYoXa1AE9keQqOonehWPV0Nqq0+hZAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU4zdDAACtcrFjgAAAA==[0mJenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+[8mha:////4LAkOS/8YiIG56y8elKlA+1OeC4V8o4gI1nwADz7fB97AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU4J6HwC/tW+HjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 43 remaining (1 over budget). Next quota of 60 in 45 min. Sleeping for 4 min 35 sec.
+[8mha:////4LAkOS/8YiIG56y8elKlA+1OeC4V8o4gI1nwADz7fB97AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU4J6HwC/tW+HjgAAAA==[0mJenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.

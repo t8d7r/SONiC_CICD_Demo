@@ -11,7 +11,7 @@ pipeline {
 	    when {
                 anyOf {
                     changeset "infra-SOT/tenants_mapping.yaml"
-		    changeset "infra-SOT/dummy"
+		    changeset "dummy"
                 }
             }
             steps {
