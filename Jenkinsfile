@@ -29,8 +29,8 @@ pipeline {
                 dir('builder'){
 		     sh 'pwd'
 		     sh 'ls'
-                     sh 'ansible-playbook builder/playbook/tenant_update_generator.yaml -v'
-                     sh 'ansible-playbook builder/playbook/tenant_delete_generator.yaml -v'
+                     sh 'ansible-playbook playbook/tenant_update_generator.yaml -v'
+                     sh 'ansible-playbook playbook/tenant_delete_generator.yaml -v'
                 }
             }
         }
