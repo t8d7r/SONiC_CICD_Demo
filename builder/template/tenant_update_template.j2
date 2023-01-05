@@ -24,16 +24,16 @@ sonic_l3_interfaces:
 sonic_l2_interfaces:
 {%- if if_dict != None %}
 {%- for interface in if_dict %}
-     - name: {{ interface }}
+  - name: {{ interface }}
 {%- if 'access' in if_dict[interface] %}
-       access:
-         vlan: {{ if_dict[interface]['access'][0] | int }}
+    access:
+      vlan: {{ if_dict[interface]['access'][0] | int }}
 {%- endif %}
 {%- if 'tagged' in if_dict[interface] %}
-       trunk:
-         allowed_vlans:
+    trunk:
+      allowed_vlans:
 {%- for vlan in  if_dict[interface]['tagged'] %}
-            - vlan: {{ vlan | int }}
+         - vlan: {{ vlan | int }}
 {%- endfor %}
 {%- endif %}
 {%- endfor %}
