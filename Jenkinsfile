@@ -14,7 +14,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'echo mappingtenantchanged'
+                sh 'yamllint infra-SOT/tenants_mapping.yaml'
             }
         }
     }
