@@ -42,10 +42,37 @@ pipeline {
             steps {
                 dir('builder'){
                      sh 'ansible-playbook playbook/tenant-delete.yaml -v'
+		     sh 'rm host_vars/*'
                 }
             }
         }
-
-
+        stage('Build update variables'){
+            when {
+                anyOf {
+                    changeset "infra-SOT/tenants_mapping.yaml"
+                    changeset "dummy"
+                }
+            }
+            steps {
+                dir('builder'){
+                     sh 'ansible-playbook playbook/tenant_update_generator.yaml -v'
+                     sh 'yamllint ../builder/host_vars/*'
+                }
+            }
+        }
+        stage('Deploy update vars'){
+           when {
+                anyOf {
+                    changeset "infra-SOT/tenants_mapping.yaml"
+                    changeset "dummy"
+                }
+            }
+            steps {
+                dir('builder'){
+                     sh 'ansible-playbook playbook/tenant-update.yaml -v'
+                     sh 'rm host_vars/*'
+                }
+            }
+        }
     }
 }
