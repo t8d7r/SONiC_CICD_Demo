@@ -1,0 +1,56 @@
+---
+- hosts: LEAVES
+  gather_facts: False
+  connection: httpapi
+  collections:
+    - dellemc.enterprise_sonic
+
+  tasks:
+  - name: Configure sonic_vxlans
+    sonic_vxlans:
+      config: "{{sonic_vxlans}}"
+      state: deleted
+    when: sonic_vxlans is defined and sonic_vxlans
+    register: result
+    ignore_errors: true
+    tags:
+      - sonic_vxlans
+
+  - name: Configure sonic_vrfs
+    sonic_vrfs:
+      config: "{{sonic_vrfs}}"
+      state: deleted
+    when: sonic_vrfs is defined and sonic_vrfs
+    register: result
+    ignore_errors: true
+    tags:
+      - sonic_vrfs
+
+  - name: Configure l3interfaces
+    sonic_l3_interfaces:
+      config: "{{sonic_l3_interfaces}}"
+      state: deleted
+    when: sonic_l3_interfaces is defined and sonic_l3_interfaces
+    register: result
+    ignore_errors: true
+    tags:
+      - sonic_l3_interfaces
+        
+  - name: Configure l2interfaces
+    sonic_l2_interfaces:
+      config: "{{sonic_l2_interfaces}}"
+      state: deleted
+    when: sonic_l2_interfaces is defined and sonic_l2_interfaces
+    register: result
+    ignore_errors: true
+    tags:
+      - sonic_l2_interfaces
+
+  - name: Configure Vlans
+    sonic_vlans:
+      config: "{{sonic_vlans}}"
+      state: deleted
+    when: sonic_vlans is defined and sonic_vlans
+    register: result
+    tags:
+      - vlans

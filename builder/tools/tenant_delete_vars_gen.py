@@ -10,8 +10,10 @@ local_path, stderr = process.communicate()
 local_path = str(local_path)
 local_path = (local_path.split("b'",1)[1]).split("SONiC_CICD_Demo/",1)[0]+"SONiC_CICD_Demo/"
 
-path_sot = local_path+'infra-SOT'
-path_template = local_path+'/builder/template/'
+#path_sot = local_path+'infra-SOT'
+path_sot = '../../infra-SOT'
+#path_template = local_path+'/builder/template/'
+path_template = '../template/'
 hostname = str(sys.argv[1])
 if_dict = {}
 old_if_dict = {}
@@ -97,5 +99,6 @@ if old_if_dict != None:
                         l2_to_delete[interface]['tagged'].append(vlan)
 
 vgf = jinja2.Environment(loader=jinja2.FileSystemLoader(path_template)).get_template('tenant_delete_template.j2').render(inventory_hostname = hostname,vlan_to_delete = vlan_to_delete, l2_to_delete = l2_to_delete)
-with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
+#with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
+with open('../host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
 print (vgf)

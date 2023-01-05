@@ -5,13 +5,15 @@ import subprocess
 import jinja2
 from jinja2 import Template
 
-process = subprocess.Popen(['pwd'],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-local_path, stderr = process.communicate()
-local_path = str(local_path)
-local_path = (local_path.split("b'",1)[1]).split("SONiC_CICD_Demo/",1)[0]+"SONiC_CICD_Demo/"
+#process = subprocess.Popen(['pwd'],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+#local_path, stderr = process.communicate()
+#local_path = str(local_path)
+#local_path = (local_path.split("b'",1)[1]).split("SONiC_CICD_Demo/",1)[0]+"SONiC_CICD_Demo/"
 
-path_sot = local_path+'infra-SOT'
-path_template = local_path+'/builder/template/'
+#path_sot = local_path+'infra-SOT'
+path_sot = '../../infra-SOT'
+#path_template = local_path+'/builder/template/'
+path_template = '../template/'
 hostname = str(sys.argv[1])
 if_dict = {}
 old_if_dict = {}
@@ -53,6 +55,7 @@ if_dict = reverse_mapping(tenants_mapping,hostname)
 
 vgf = jinja2.Environment(loader=jinja2.FileSystemLoader(path_template)).get_template('tenant_update_template.j2').render(inventory_hostname = hostname, if_dict = if_dict, tenants_mapping = tenants_mapping, tenants = tenants, fabric_model = fabric_model)
 
-with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
+#with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
+with open('../host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
 print (vgf)
 

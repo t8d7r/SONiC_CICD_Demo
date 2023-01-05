@@ -1,4 +1,4 @@
-- hosts: LEAF01
+- hosts: LEAVES
   connection: local
   gather_facts: no
 
