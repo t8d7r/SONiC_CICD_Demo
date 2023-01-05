@@ -26,7 +26,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'ansible -version'
+                sh 'ansible --version'
             }
         }
 
