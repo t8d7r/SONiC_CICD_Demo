@@ -7,7 +7,7 @@ pipeline {
                     sh 'yamllint -v'
             }
         }
-        stage('Check syntax')
+        stage('Check syntax'){
 	    when {
                 anyOf {
                     changeset "infra-SOT/tenants_mapping.yaml"
@@ -16,6 +16,6 @@ pipeline {
             steps {
                 sh 'echo mappingtenantchanged'
             }
-
+        }
     }
 }
