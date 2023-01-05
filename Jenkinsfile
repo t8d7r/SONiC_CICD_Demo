@@ -15,8 +15,20 @@ pipeline {
                 }
             }
             steps {
-                sh 'yamllint infra-SOT/* -v'
+                sh 'yamllint infra-SOT/*'
             }
         }
+        stage('Check syntax'){
+            when {
+                anyOf {
+                    changeset "infra-SOT/tenants_mapping.yaml"
+                    changeset "dummy"
+                }
+            }
+            steps {
+                sh 'ansible -version'
+            }
+        }
+
     }
 }

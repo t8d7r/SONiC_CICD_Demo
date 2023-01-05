@@ -1,7 +1,7 @@
 Started by timer
-[Thu Jan 05 15:01:00 UTC 2023] Starting branch indexing...
-[8mha:////4FkTsH7ZLxhdBHfoiHyZ3LjttfOaWfSrbXJhsnXSjLuiAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU7F8AAC+6/vvjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
-[8mha:////4GEAh4XTAdqeB2PKKX2gHVARLSU6qut4d+Wi/w9Tl7OaAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU7GSGgAJd3U8jgAAAA==[0mGitHub throttling is disabled, which is not allowed for public GitHub usage, so ThrottleOnOver will be used instead. To configure a different rate limiting strategy, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+[Thu Jan 05 15:11:00 UTC 2023] Starting branch indexing...
+[8mha:////4IFfHKgTUW+CM44gIMiFRrcyurG4Xyeom1aD79Ve9gqyAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU43HOwCb+YQ9jgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+[8mha:////4G58KErlJlfx99XlvNhZHRHRYfhOSm1UptffB9YfKDN0AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU41XGQBvgGbxjgAAAA==[0mGitHub throttling is disabled, which is not allowed for public GitHub usage, so ThrottleOnOver will be used instead. To configure a different rate limiting strategy, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
 Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWHQyCgpKSi20tdPzyzJKE0C6srVL7FIMS/SD/b3y3SOd/Z0dol3Sc3NBwC7A0h7rQAAAA==[0mt8d7r/SONiC_CICD_Demo
 
   Checking branches...
@@ -13,7 +13,7 @@ Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAA
   Getting remote pull requests...
       ‘Jenkinsfile’ found
     Met criteria
-No changes detected: main (still at 48c395b7f5a28ff40e017f04c43102bde97ee257)
+No changes detected: main (still at 8edc2619833f3b13cef27270be1b36072155fcc5)
 
   1 branches were processed
 
@@ -23,5 +23,5 @@ No changes detected: main (still at 48c395b7f5a28ff40e017f04c43102bde97ee257)
 
 Finished examining t8d7r/SONiC_CICD_Demo
 
-[Thu Jan 05 15:01:02 UTC 2023] Finished branch indexing. Indexing took 1.4 sec
+[Thu Jan 05 15:11:02 UTC 2023] Finished branch indexing. Indexing took 1.5 sec
 Finished: SUCCESS
