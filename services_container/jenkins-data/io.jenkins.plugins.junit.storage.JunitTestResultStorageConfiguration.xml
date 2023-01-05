@@ -1,0 +1,4 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.jenkins.plugins.junit.storage.JunitTestResultStorageConfiguration plugin="junit@1156.vcf492e95a_a_b_0">
+  <storage class="io.jenkins.plugins.junit.storage.FileJunitTestResultStorage"/>
+</io.jenkins.plugins.junit.storage.JunitTestResultStorageConfiguration>

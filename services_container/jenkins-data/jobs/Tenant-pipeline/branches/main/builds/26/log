@@ -1,0 +1,28 @@
+Started by user [8mha:////4Isgi+r4oo5dIQkAtFLehoGaDpjytGa2qbrmze+S0bMeAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9koz83MRiAAB97I7BAAAA[0mthomas
+[8mha:////4NkZu6QJW6TFlN6emo7a3LVSkrVtb8mQLRrkRm8g4wBNAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU0RGBwBo95UzjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+[8mha:////4JCRo4g5I2Z/BfcbM1BOKiY4XDi1QbXG/UE46oEyZMHbAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU0RGJwD+x5JEjgAAAA==[0mJenkins-Imposed API Limiter: Current quota for Github API usage has 49 remaining (1 over budget). Next quota of 60 in 53 min. Sleeping for 3 min 59 sec.
+[8mha:////4JCRo4g5I2Z/BfcbM1BOKiY4XDi1QbXG/UE46oEyZMHbAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU0RGJwD+x5JEjgAAAA==[0mJenkins is attempting to evenly distribute GitHub API requests. To configure a different rate limiting strategy, such as having Jenkins restrict GitHub API requests only when near or above the GitHub rate limit, go to "GitHub API usage" under "Configure System" in the Jenkins settings.
+[8mha:////4O/bBqTQ64QDleJtVFUrHj0nuQ7VcjoGi1QEyvs+AQ56AAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRrU7QODwAJhBNPjgAAAA==[0mJenkins-Imposed API Limiter: Still sleeping, now only 57 sec remaining.
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$LocalChecker.waitUntilRateLimit(ApiRateLimitChecker.java:336)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$LocalChecker.checkRateLimit(ApiRateLimitChecker.java:272)
+	at org.jenkinsci.plugins.github_branch_source.ApiRateLimitChecker$RateLimitCheckerAdapter.checkRateLimit(ApiRateLimitChecker.java:253)
+	at org.kohsuke.github.GitHubRateLimitChecker.checkRateLimit(GitHubRateLimitChecker.java:128)
+Caused: java.io.InterruptedIOException: sleep interrupted
+	at org.kohsuke.github.GitHubRateLimitChecker.checkRateLimit(GitHubRateLimitChecker.java:142)
+	at org.kohsuke.github.GitHubClient.sendRequest(GitHubClient.java:383)
+Caused: org.kohsuke.github.HttpException: Server returned HTTP response code: -1, message: 'null' for URL: https://api.github.com/repos/t8d7r/SONiC_CICD_Demo
+	at org.kohsuke.github.GitHubClient.interpretApiError(GitHubClient.java:548)
+	at org.kohsuke.github.GitHubClient.sendRequest(GitHubClient.java:401)
+	at org.kohsuke.github.GitHubClient.sendRequest(GitHubClient.java:355)
+	at org.kohsuke.github.Requester.fetch(Requester.java:76)
+	at org.kohsuke.github.GHRepository.read(GHRepository.java:131)
+	at org.kohsuke.github.GitHub.getRepository(GitHub.java:673)
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieve(GitHubSCMSource.java:1685)
+	at jenkins.scm.api.SCMSource.fetch(SCMSource.java:582)
+	at org.jenkinsci.plugins.workflow.multibranch.SCMBinder.create(SCMBinder.java:101)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:312)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Finished: FAILURE

@@ -1,0 +1,39 @@
+{% for type in fabric_model %}
+{% if fabric_model[type] != None %}
+{% for sw,sw_data in fabric_model[type].items() %}
+DELETE{{ sw }} ansible_host={{ sw_data['Mgmt'][:-3] }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+[SPINES]
+{% if fabric_model['SPINES'] != None %}
+{% for sw in fabric_model['SPINES'].keys() %}
+DELETE{{ sw }}
+{% endfor %}
+{% endif %}
+
+[LEAVES]
+{% if fabric_model['LEAVES'] != None %}
+{% for sw in fabric_model['LEAVES'].keys() %}
+DELETE{{ sw }}
+{% endfor %}
+{% endif %}
+
+[BORDERS]
+{% if fabric_model['BORDERS'] != None %}
+{% for sw in fabric_model['BORDERS'].keys() %}
+DELETE{{ sw }}
+{% endfor %}
+{% endif %}
+
+[SONIC]
+{% for type in fabric_model %}
+{% if fabric_model[type] != None %}
+{% for sw,sw_data in fabric_model[type].items() %}
+{% if sw_data['OS'] == "sonic" %}
+DELETE{{ sw }}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

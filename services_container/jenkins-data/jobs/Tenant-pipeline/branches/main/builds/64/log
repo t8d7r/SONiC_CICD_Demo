@@ -1,0 +1,649 @@
+Started by user [8mha:////4Isgi+r4oo5dIQkAtFLehoGaDpjytGa2qbrmze+S0bMeAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9koz83MRiAAB97I7BAAAA[0mthomas
+[8mha:////4DEZTdnsZwlFu7HKkjIP4akl1MW1T+TCBc8VfN4cLK+QAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRr08q4OgDTKFFajgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+Obtained Jenkinsfile from 66d15b06ae298b89c8ffc6a2acd31145229d4e4a
+[8mha:////4GHduKfmQY2qFm5LeVj70BcNf2KMdm3eBn+0UuBfhS58AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Ekukw2qVBkUTUqN7xN+b2mSwrx0Z3BD5j9Qxoq81KKDAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4DLa4Cx/j001ZISRllW6wh928DyNkAuGq7VMvmL7EEJAAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZh/eT83ILSktQi/eLUorLM5NRifQDKn+WUyAAAAA==[0mservices in /home/jenkins/workspace/Tenant-pipeline_main
+[8mha:////4G/+lxx3Wq4KlwaY+alNdsZ/rdOUk2LPO3S2cqXonJ0PAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4FAF4Okbbu//ithk+J+QGeZH57ZftckrhlBMa196yOGeAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4LwnkFcNLR2Ka4iYJn5JVF2hQddsTOGsczd6G6394cMWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HPxxo8uFj0dPbje3QaRe0HzGd11WyWcpkqepTABMFvFAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Fetching changes from the remote Git repository
+Fetching without tags
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/Tenant-pipeline_main/.git # timeout=10
+ > git config remote.origin.url https://github.com/t8d7r/SONiC_CICD_Demo.git # timeout=10
+Fetching upstream changes from https://github.com/t8d7r/SONiC_CICD_Demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --no-tags --force --progress -- https://github.com/t8d7r/SONiC_CICD_Demo.git +refs/heads/main:refs/remotes/origin/main # timeout=10
+Checking out Revision 66d15b06ae298b89c8ffc6a2acd31145229d4e4a (main)
+Commit message: "first test pipeline 10"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 66d15b06ae298b89c8ffc6a2acd31145229d4e4a # timeout=10
+ > git rev-list --no-walk 5ed66e8e665cf818701a76f83bfef6d4914452ac # timeout=10
+[8mha:////4OGLSsFpFA4brxJepUnNaUsPaSuVwrNBt764Chkb8gppAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4KQNA/WTHzlYOTfv+oyK3Th+HV5Lkusip8Mx+o5pekDBAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4MEX5G9DgtUxiCyb1JTlAbxFuUgzcg4JG80igOaMgAWOAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4C/CZjeS7SYiYD+JUAo0Uh+LW8ORydw/7pfx6s43XOB7AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4BUIs1ne4lgemdBU7aGFPExkkMXJ0b+TLFmMUpVKBKmUAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4FAxKENyp+HkUnr3tVHUlFFFkCFyG+agz5TeqoEIfrbPAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Test command)
+[8mha:////4CXbrvf2C3qEDeyduMFGrUP5WJf/oewm/xfUFUBdb7a6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ python3 --version
+Python 3.10.6
+[8mha:////4JVsemyGHs0SW5HBNsRdg710WjuBhorpAtwykVWuASsbAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0uFte2+AAAA[0m[Pipeline] sh
++ yamllint -v
+yamllint 1.26.3
+[8mha:////4D5aNa+Vv/VPwNyuYtD8tUkbOcOC7TwBgNca8L5+Z9P/AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEeFbpZvgAAAA==[0m[Pipeline] }
+[8mha:////4CePHMIdD0lWqgWRlNf16RyMrO1PQNZF26fYvCCGXg4VAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7Ny324eW+AAAA[0m[Pipeline] // stage
+[8mha:////4GC1oexPmW16xxjDCLjxegYYRY0SJ/a4TK3BeQyn4vvSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohU3ZAQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9AAkvMTrCAAAA[0m[Pipeline] stage
+[8mha:////4GipYthWgiFnrHKj0ykelcGnza4obflH4ZULcfvev6NlAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (Check syntax)
+[8mha:////4L1EQHEY3CwWK+mvjr5RefJnRAwt1k+CUlcTLNzNu6YQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] sh
++ yamllint infra-SOT/fabric_modeling.yaml infra-SOT/fabric_wiring.yaml infra-SOT/tenants.yaml infra-SOT/tenants_mapping.yaml
+[8mha:////4JkCoY0I6aQrMcKsH1WxohhqJrkYgVbxf7jo0XHxlK7YAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPiXWgpW+AAAA[0m[Pipeline] }
+[8mha:////4IhRN4HCYsbFNw+8NgMCTj1xxnESU+94xduLruPB39A2AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRqZAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEdlBFkvgAAAA==[0m[Pipeline] // stage
+[8mha:////4EHadsvaZwiwfDOOQNZgFCYgXxouf81CsnVfUf3ZvBNcAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUhRExdY26cILQhJA0+r8kKenEibgadyBQiQkPlm3Jes8XVMHDkbxmVuFgMPSGjW7SObFEfrg4SszSmfWEgZxinUodSdUutaOoYFFRworDWmHvKBjUETbciruonUBdn6LP24FDaeQNHlDwTI7Cx2+ZPWyvkwyEP85fAMxjhLJpsu32n2f1BlfFHmHCAAAA[0m[Pipeline] stage
+[8mha:////4It2riv73Yvw8V1xC1Lt3EKPHibULD3uKGsYrENdhM6sAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] { (Build variables)
+[8mha:////4H4AAo7/+V50BOy4/Z/8qJ8UGg7/rvgaGRrJ/PEOIX3EAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] dir
+Running in /home/jenkins/workspace/Tenant-pipeline_main/builder
+[8mha:////4Enb52n6MHXS/toHzkrnIR+CoWNx25yOKFXMydCzgVsXAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] {
+[8mha:////4KWfC4mXeLgE2ShKUvjcbsknLLv62N844l3HTS7IYMZCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] sh
++ pwd
+/home/jenkins/workspace/Tenant-pipeline_main/builder
+[8mha:////4I+tkQDoPRVdpM9I9m+a7g8hOhMDftitcrgGfNY+cbGhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q0bbeqGvgAAAA==[0m[Pipeline] sh
++ ls
+ansible.cfg
+group_vars
+host_vars
+inventory
+playbook
+template
+tools
+[8mha:////4Kpm9LjkVRVF96f5r9SDUzQK7kj+Wab/ZTePE+GN4BWrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1aXPGfvgAAAA==[0m[Pipeline] sh
++ ansible-playbook playbook/tenant_update_generator.yaml -v
+Using /home/jenkins/workspace/Tenant-pipeline_main/builder/ansible.cfg as config file
+
+PLAY [LEAVES] ******************************************************************
+
+TASK [generate host_var to update] *********************************************
+changed: [LEAF01] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n  - vlan_id: 11\n  - vlan_id: 12\n  - vlan_id: 1100\n  - vlan_id: 1200\n\nsonic_l3_interfaces:\n  - name: VLAN_Prod_11\n    ipv4:\n      anycast_addresses:\n        - 192.168.11.254/24\n  - name: VLAN_Prod_12\n    ipv4:\n      anycast_addresses:\n        - 192.168.12.254/24\n\nsonic_l2_interfaces:\n     - name: Eth1/3\n       access:\n         vlan: 11\n     - name: Po100\n       trunk:\n         allowed_vlans:\n            - vlan: 11\n            - vlan: 12\n     - name: Eth1/4\n       access:\n         vlan: 12\n\nsonic_vrfs:\n  - name: Vrf1\n    members:\n      interfaces:\n        - name: Vlan11\n        - name: Vlan12\n        - name: Vlan1100\n  - name: Vrf2\n    members:\n      interfaces:\n        - name: Vlan1200\n\nsonic_vxlans:\n  - name: vtep1\n    source_ip: 10.1.0.1\n    evpn_nvo: nvo1\n    vlan_map:\n      - vni: 10011\n        vlan: 11\n      - vni: 10012\n        vlan: 12\n      - vni: 11100\n        vlan: 1100\n      - vni: 11200\n        vlan: 1200\n    vrf_map:\n      - vni: 11200  \n        vrf: Vrf2\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "  - vlan_id: 11", "  - vlan_id: 12", "  - vlan_id: 1100", "  - vlan_id: 1200", "", "sonic_l3_interfaces:", "  - name: VLAN_Prod_11", "    ipv4:", "      anycast_addresses:", "        - 192.168.11.254/24", "  - name: VLAN_Prod_12", "    ipv4:", "      anycast_addresses:", "        - 192.168.12.254/24", "", "sonic_l2_interfaces:", "     - name: Eth1/3", "       access:", "         vlan: 11", "     - name: Po100", "       trunk:", "         allowed_vlans:", "            - vlan: 11", "            - vlan: 12", "     - name: Eth1/4", "       access:", "         vlan: 12", "", "sonic_vrfs:", "  - name: Vrf1", "    members:", "      interfaces:", "        - name: Vlan11", "        - name: Vlan12", "        - name: Vlan1100", "  - name: Vrf2", "    members:", "      interfaces:", "        - name: Vlan1200", "", "sonic_vxlans:", "  - name: vtep1", "    source_ip: 10.1.0.1", "    evpn_nvo: nvo1", "    vlan_map:", "      - vni: 10011", "        vlan: 11", "      - vni: 10012", "        vlan: 12", "      - vni: 11100", "        vlan: 1100", "      - vni: 11200", "        vlan: 1200", "    vrf_map:", "      - vni: 11200  ", "        vrf: Vrf2", ""]}
+changed: [LEAF03] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n  - vlan_id: 21\n  - vlan_id: 22\n  - vlan_id: 1100\n  - vlan_id: 1200\n\nsonic_l3_interfaces:\n  - name: VLAN_Prod_21\n    ipv4:\n      anycast_addresses:\n        - 192.168.21.254/24\n  - name: VLAN_Prod_22\n    ipv4:\n      anycast_addresses:\n        - 192.168.22.254/24\n\nsonic_l2_interfaces:\n     - name: Eth1/3\n       access:\n         vlan: 21\n     - name: Po100\n       trunk:\n         allowed_vlans:\n            - vlan: 21\n            - vlan: 22\n     - name: Eth1/4\n       access:\n         vlan: 22\n\nsonic_vrfs:\n  - name: Vrf1\n    members:\n      interfaces:\n        - name: Vlan1100\n  - name: Vrf2\n    members:\n      interfaces:\n        - name: Vlan21\n        - name: Vlan22\n        - name: Vlan1200\n\nsonic_vxlans:\n  - name: vtep1\n    source_ip: 10.1.0.2\n    evpn_nvo: nvo1\n    vlan_map:\n      - vni: 10021\n        vlan: 21\n      - vni: 10022\n        vlan: 22\n      - vni: 11100\n        vlan: 1100\n      - vni: 11200\n        vlan: 1200\n    vrf_map:\n      - vni: 11200  \n        vrf: Vrf2\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "  - vlan_id: 21", "  - vlan_id: 22", "  - vlan_id: 1100", "  - vlan_id: 1200", "", "sonic_l3_interfaces:", "  - name: VLAN_Prod_21", "    ipv4:", "      anycast_addresses:", "        - 192.168.21.254/24", "  - name: VLAN_Prod_22", "    ipv4:", "      anycast_addresses:", "        - 192.168.22.254/24", "", "sonic_l2_interfaces:", "     - name: Eth1/3", "       access:", "         vlan: 21", "     - name: Po100", "       trunk:", "         allowed_vlans:", "            - vlan: 21", "            - vlan: 22", "     - name: Eth1/4", "       access:", "         vlan: 22", "", "sonic_vrfs:", "  - name: Vrf1", "    members:", "      interfaces:", "        - name: Vlan1100", "  - name: Vrf2", "    members:", "      interfaces:", "        - name: Vlan21", "        - name: Vlan22", "        - name: Vlan1200", "", "sonic_vxlans:", "  - name: vtep1", "    source_ip: 10.1.0.2", "    evpn_nvo: nvo1", "    vlan_map:", "      - vni: 10021", "        vlan: 21", "      - vni: 10022", "        vlan: 22", "      - vni: 11100", "        vlan: 1100", "      - vni: 11200", "        vlan: 1200", "    vrf_map:", "      - vni: 11200  ", "        vrf: Vrf2", ""]}
+changed: [LEAF02] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n  - vlan_id: 11\n  - vlan_id: 12\n  - vlan_id: 1100\n  - vlan_id: 1200\n\nsonic_l3_interfaces:\n  - name: VLAN_Prod_11\n    ipv4:\n      anycast_addresses:\n        - 192.168.11.254/24\n  - name: VLAN_Prod_12\n    ipv4:\n      anycast_addresses:\n        - 192.168.12.254/24\n\nsonic_l2_interfaces:\n     - name: Eth1/3\n       access:\n         vlan: 11\n     - name: Po100\n       trunk:\n         allowed_vlans:\n            - vlan: 11\n            - vlan: 12\n     - name: Eth1/4\n       access:\n         vlan: 12\n\nsonic_vrfs:\n  - name: Vrf1\n    members:\n      interfaces:\n        - name: Vlan11\n        - name: Vlan12\n        - name: Vlan1100\n  - name: Vrf2\n    members:\n      interfaces:\n        - name: Vlan1200\n\nsonic_vxlans:\n  - name: vtep1\n    source_ip: 10.1.0.1\n    evpn_nvo: nvo1\n    vlan_map:\n      - vni: 10011\n        vlan: 11\n      - vni: 10012\n        vlan: 12\n      - vni: 11100\n        vlan: 1100\n      - vni: 11200\n        vlan: 1200\n    vrf_map:\n      - vni: 11200  \n        vrf: Vrf2\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "  - vlan_id: 11", "  - vlan_id: 12", "  - vlan_id: 1100", "  - vlan_id: 1200", "", "sonic_l3_interfaces:", "  - name: VLAN_Prod_11", "    ipv4:", "      anycast_addresses:", "        - 192.168.11.254/24", "  - name: VLAN_Prod_12", "    ipv4:", "      anycast_addresses:", "        - 192.168.12.254/24", "", "sonic_l2_interfaces:", "     - name: Eth1/3", "       access:", "         vlan: 11", "     - name: Po100", "       trunk:", "         allowed_vlans:", "            - vlan: 11", "            - vlan: 12", "     - name: Eth1/4", "       access:", "         vlan: 12", "", "sonic_vrfs:", "  - name: Vrf1", "    members:", "      interfaces:", "        - name: Vlan11", "        - name: Vlan12", "        - name: Vlan1100", "  - name: Vrf2", "    members:", "      interfaces:", "        - name: Vlan1200", "", "sonic_vxlans:", "  - name: vtep1", "    source_ip: 10.1.0.1", "    evpn_nvo: nvo1", "    vlan_map:", "      - vni: 10011", "        vlan: 11", "      - vni: 10012", "        vlan: 12", "      - vni: 11100", "        vlan: 1100", "      - vni: 11200", "        vlan: 1200", "    vrf_map:", "      - vni: 11200  ", "        vrf: Vrf2", ""]}
+changed: [LEAF04] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n  - vlan_id: 21\n  - vlan_id: 22\n  - vlan_id: 1100\n  - vlan_id: 1200\n\nsonic_l3_interfaces:\n  - name: VLAN_Prod_21\n    ipv4:\n      anycast_addresses:\n        - 192.168.21.254/24\n  - name: VLAN_Prod_22\n    ipv4:\n      anycast_addresses:\n        - 192.168.22.254/24\n\nsonic_l2_interfaces:\n     - name: Eth1/3\n       access:\n         vlan: 21\n     - name: Po100\n       trunk:\n         allowed_vlans:\n            - vlan: 21\n            - vlan: 22\n     - name: Eth1/4\n       access:\n         vlan: 22\n\nsonic_vrfs:\n  - name: Vrf1\n    members:\n      interfaces:\n        - name: Vlan1100\n  - name: Vrf2\n    members:\n      interfaces:\n        - name: Vlan21\n        - name: Vlan22\n        - name: Vlan1200\n\nsonic_vxlans:\n  - name: vtep1\n    source_ip: 10.1.0.2\n    evpn_nvo: nvo1\n    vlan_map:\n      - vni: 10021\n        vlan: 21\n      - vni: 10022\n        vlan: 22\n      - vni: 11100\n        vlan: 1100\n      - vni: 11200\n        vlan: 1200\n    vrf_map:\n      - vni: 11200  \n        vrf: Vrf2\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "  - vlan_id: 21", "  - vlan_id: 22", "  - vlan_id: 1100", "  - vlan_id: 1200", "", "sonic_l3_interfaces:", "  - name: VLAN_Prod_21", "    ipv4:", "      anycast_addresses:", "        - 192.168.21.254/24", "  - name: VLAN_Prod_22", "    ipv4:", "      anycast_addresses:", "        - 192.168.22.254/24", "", "sonic_l2_interfaces:", "     - name: Eth1/3", "       access:", "         vlan: 21", "     - name: Po100", "       trunk:", "         allowed_vlans:", "            - vlan: 21", "            - vlan: 22", "     - name: Eth1/4", "       access:", "         vlan: 22", "", "sonic_vrfs:", "  - name: Vrf1", "    members:", "      interfaces:", "        - name: Vlan1100", "  - name: Vrf2", "    members:", "      interfaces:", "        - name: Vlan21", "        - name: Vlan22", "        - name: Vlan1200", "", "sonic_vxlans:", "  - name: vtep1", "    source_ip: 10.1.0.2", "    evpn_nvo: nvo1", "    vlan_map:", "      - vni: 10021", "        vlan: 21", "      - vni: 10022", "        vlan: 22", "      - vni: 11100", "        vlan: 1100", "      - vni: 11200", "        vlan: 1200", "    vrf_map:", "      - vni: 11200  ", "        vrf: Vrf2", ""]}
+
+TASK [set_fact] ****************************************************************
+ok: [LEAF01] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": [{"access": {"vlan": 11}, "name": "Eth1/3"}, {"name": "Po100", "trunk": {"allowed_vlans": [{"vlan": 11}, {"vlan": 12}]}}, {"access": {"vlan": 12}, "name": "Eth1/4"}], "sonic_l3_interfaces": [{"ipv4": {"anycast_addresses": ["192.168.11.254/24"]}, "name": "VLAN_Prod_11"}, {"ipv4": {"anycast_addresses": ["192.168.12.254/24"]}, "name": "VLAN_Prod_12"}], "sonic_vlans": [{"vlan_id": 11}, {"vlan_id": 12}, {"vlan_id": 1100}, {"vlan_id": 1200}], "sonic_vrfs": [{"members": {"interfaces": [{"name": "Vlan11"}, {"name": "Vlan12"}, {"name": "Vlan1100"}]}, "name": "Vrf1"}, {"members": {"interfaces": [{"name": "Vlan1200"}]}, "name": "Vrf2"}], "sonic_vxlans": [{"evpn_nvo": "nvo1", "name": "vtep1", "source_ip": "10.1.0.1", "vlan_map": [{"vlan": 11, "vni": 10011}, {"vlan": 12, "vni": 10012}, {"vlan": 1100, "vni": 11100}, {"vlan": 1200, "vni": 11200}], "vrf_map": [{"vni": 11200, "vrf": "Vrf2"}]}], "switch_role": "leaf"}}, "changed": false}
+ok: [LEAF02] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": [{"access": {"vlan": 11}, "name": "Eth1/3"}, {"name": "Po100", "trunk": {"allowed_vlans": [{"vlan": 11}, {"vlan": 12}]}}, {"access": {"vlan": 12}, "name": "Eth1/4"}], "sonic_l3_interfaces": [{"ipv4": {"anycast_addresses": ["192.168.11.254/24"]}, "name": "VLAN_Prod_11"}, {"ipv4": {"anycast_addresses": ["192.168.12.254/24"]}, "name": "VLAN_Prod_12"}], "sonic_vlans": [{"vlan_id": 11}, {"vlan_id": 12}, {"vlan_id": 1100}, {"vlan_id": 1200}], "sonic_vrfs": [{"members": {"interfaces": [{"name": "Vlan11"}, {"name": "Vlan12"}, {"name": "Vlan1100"}]}, "name": "Vrf1"}, {"members": {"interfaces": [{"name": "Vlan1200"}]}, "name": "Vrf2"}], "sonic_vxlans": [{"evpn_nvo": "nvo1", "name": "vtep1", "source_ip": "10.1.0.1", "vlan_map": [{"vlan": 11, "vni": 10011}, {"vlan": 12, "vni": 10012}, {"vlan": 1100, "vni": 11100}, {"vlan": 1200, "vni": 11200}], "vrf_map": [{"vni": 11200, "vrf": "Vrf2"}]}], "switch_role": "leaf"}}, "changed": false}
+ok: [LEAF03] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": [{"access": {"vlan": 21}, "name": "Eth1/3"}, {"name": "Po100", "trunk": {"allowed_vlans": [{"vlan": 21}, {"vlan": 22}]}}, {"access": {"vlan": 22}, "name": "Eth1/4"}], "sonic_l3_interfaces": [{"ipv4": {"anycast_addresses": ["192.168.21.254/24"]}, "name": "VLAN_Prod_21"}, {"ipv4": {"anycast_addresses": ["192.168.22.254/24"]}, "name": "VLAN_Prod_22"}], "sonic_vlans": [{"vlan_id": 21}, {"vlan_id": 22}, {"vlan_id": 1100}, {"vlan_id": 1200}], "sonic_vrfs": [{"members": {"interfaces": [{"name": "Vlan1100"}]}, "name": "Vrf1"}, {"members": {"interfaces": [{"name": "Vlan21"}, {"name": "Vlan22"}, {"name": "Vlan1200"}]}, "name": "Vrf2"}], "sonic_vxlans": [{"evpn_nvo": "nvo1", "name": "vtep1", "source_ip": "10.1.0.2", "vlan_map": [{"vlan": 21, "vni": 10021}, {"vlan": 22, "vni": 10022}, {"vlan": 1100, "vni": 11100}, {"vlan": 1200, "vni": 11200}], "vrf_map": [{"vni": 11200, "vrf": "Vrf2"}]}], "switch_role": "leaf"}}, "changed": false}
+ok: [LEAF04] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": [{"access": {"vlan": 21}, "name": "Eth1/3"}, {"name": "Po100", "trunk": {"allowed_vlans": [{"vlan": 21}, {"vlan": 22}]}}, {"access": {"vlan": 22}, "name": "Eth1/4"}], "sonic_l3_interfaces": [{"ipv4": {"anycast_addresses": ["192.168.21.254/24"]}, "name": "VLAN_Prod_21"}, {"ipv4": {"anycast_addresses": ["192.168.22.254/24"]}, "name": "VLAN_Prod_22"}], "sonic_vlans": [{"vlan_id": 21}, {"vlan_id": 22}, {"vlan_id": 1100}, {"vlan_id": 1200}], "sonic_vrfs": [{"members": {"interfaces": [{"name": "Vlan1100"}]}, "name": "Vrf1"}, {"members": {"interfaces": [{"name": "Vlan21"}, {"name": "Vlan22"}, {"name": "Vlan1200"}]}, "name": "Vrf2"}], "sonic_vxlans": [{"evpn_nvo": "nvo1", "name": "vtep1", "source_ip": "10.1.0.2", "vlan_map": [{"vlan": 21, "vni": 10021}, {"vlan": 22, "vni": 10022}, {"vlan": 1100, "vni": 11100}, {"vlan": 1200, "vni": 11200}], "vrf_map": [{"vni": 11200, "vrf": "Vrf2"}]}], "switch_role": "leaf"}}, "changed": false}
+
+TASK [debug] *******************************************************************
+ok: [LEAF01] => {
+    "outcome": {
+        "sonic_l2_interfaces": [
+            {
+                "access": {
+                    "vlan": 11
+                },
+                "name": "Eth1/3"
+            },
+            {
+                "name": "Po100",
+                "trunk": {
+                    "allowed_vlans": [
+                        {
+                            "vlan": 11
+                        },
+                        {
+                            "vlan": 12
+                        }
+                    ]
+                }
+            },
+            {
+                "access": {
+                    "vlan": 12
+                },
+                "name": "Eth1/4"
+            }
+        ],
+        "sonic_l3_interfaces": [
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.11.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_11"
+            },
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.12.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_12"
+            }
+        ],
+        "sonic_vlans": [
+            {
+                "vlan_id": 11
+            },
+            {
+                "vlan_id": 12
+            },
+            {
+                "vlan_id": 1100
+            },
+            {
+                "vlan_id": 1200
+            }
+        ],
+        "sonic_vrfs": [
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan11"
+                        },
+                        {
+                            "name": "Vlan12"
+                        },
+                        {
+                            "name": "Vlan1100"
+                        }
+                    ]
+                },
+                "name": "Vrf1"
+            },
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan1200"
+                        }
+                    ]
+                },
+                "name": "Vrf2"
+            }
+        ],
+        "sonic_vxlans": [
+            {
+                "evpn_nvo": "nvo1",
+                "name": "vtep1",
+                "source_ip": "10.1.0.1",
+                "vlan_map": [
+                    {
+                        "vlan": 11,
+                        "vni": 10011
+                    },
+                    {
+                        "vlan": 12,
+                        "vni": 10012
+                    },
+                    {
+                        "vlan": 1100,
+                        "vni": 11100
+                    },
+                    {
+                        "vlan": 1200,
+                        "vni": 11200
+                    }
+                ],
+                "vrf_map": [
+                    {
+                        "vni": 11200,
+                        "vrf": "Vrf2"
+                    }
+                ]
+            }
+        ],
+        "switch_role": "leaf"
+    }
+}
+ok: [LEAF02] => {
+    "outcome": {
+        "sonic_l2_interfaces": [
+            {
+                "access": {
+                    "vlan": 11
+                },
+                "name": "Eth1/3"
+            },
+            {
+                "name": "Po100",
+                "trunk": {
+                    "allowed_vlans": [
+                        {
+                            "vlan": 11
+                        },
+                        {
+                            "vlan": 12
+                        }
+                    ]
+                }
+            },
+            {
+                "access": {
+                    "vlan": 12
+                },
+                "name": "Eth1/4"
+            }
+        ],
+        "sonic_l3_interfaces": [
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.11.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_11"
+            },
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.12.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_12"
+            }
+        ],
+        "sonic_vlans": [
+            {
+                "vlan_id": 11
+            },
+            {
+                "vlan_id": 12
+            },
+            {
+                "vlan_id": 1100
+            },
+            {
+                "vlan_id": 1200
+            }
+        ],
+        "sonic_vrfs": [
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan11"
+                        },
+                        {
+                            "name": "Vlan12"
+                        },
+                        {
+                            "name": "Vlan1100"
+                        }
+                    ]
+                },
+                "name": "Vrf1"
+            },
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan1200"
+                        }
+                    ]
+                },
+                "name": "Vrf2"
+            }
+        ],
+        "sonic_vxlans": [
+            {
+                "evpn_nvo": "nvo1",
+                "name": "vtep1",
+                "source_ip": "10.1.0.1",
+                "vlan_map": [
+                    {
+                        "vlan": 11,
+                        "vni": 10011
+                    },
+                    {
+                        "vlan": 12,
+                        "vni": 10012
+                    },
+                    {
+                        "vlan": 1100,
+                        "vni": 11100
+                    },
+                    {
+                        "vlan": 1200,
+                        "vni": 11200
+                    }
+                ],
+                "vrf_map": [
+                    {
+                        "vni": 11200,
+                        "vrf": "Vrf2"
+                    }
+                ]
+            }
+        ],
+        "switch_role": "leaf"
+    }
+}
+ok: [LEAF03] => {
+    "outcome": {
+        "sonic_l2_interfaces": [
+            {
+                "access": {
+                    "vlan": 21
+                },
+                "name": "Eth1/3"
+            },
+            {
+                "name": "Po100",
+                "trunk": {
+                    "allowed_vlans": [
+                        {
+                            "vlan": 21
+                        },
+                        {
+                            "vlan": 22
+                        }
+                    ]
+                }
+            },
+            {
+                "access": {
+                    "vlan": 22
+                },
+                "name": "Eth1/4"
+            }
+        ],
+        "sonic_l3_interfaces": [
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.21.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_21"
+            },
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.22.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_22"
+            }
+        ],
+        "sonic_vlans": [
+            {
+                "vlan_id": 21
+            },
+            {
+                "vlan_id": 22
+            },
+            {
+                "vlan_id": 1100
+            },
+            {
+                "vlan_id": 1200
+            }
+        ],
+        "sonic_vrfs": [
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan1100"
+                        }
+                    ]
+                },
+                "name": "Vrf1"
+            },
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan21"
+                        },
+                        {
+                            "name": "Vlan22"
+                        },
+                        {
+                            "name": "Vlan1200"
+                        }
+                    ]
+                },
+                "name": "Vrf2"
+            }
+        ],
+        "sonic_vxlans": [
+            {
+                "evpn_nvo": "nvo1",
+                "name": "vtep1",
+                "source_ip": "10.1.0.2",
+                "vlan_map": [
+                    {
+                        "vlan": 21,
+                        "vni": 10021
+                    },
+                    {
+                        "vlan": 22,
+                        "vni": 10022
+                    },
+                    {
+                        "vlan": 1100,
+                        "vni": 11100
+                    },
+                    {
+                        "vlan": 1200,
+                        "vni": 11200
+                    }
+                ],
+                "vrf_map": [
+                    {
+                        "vni": 11200,
+                        "vrf": "Vrf2"
+                    }
+                ]
+            }
+        ],
+        "switch_role": "leaf"
+    }
+}
+ok: [LEAF04] => {
+    "outcome": {
+        "sonic_l2_interfaces": [
+            {
+                "access": {
+                    "vlan": 21
+                },
+                "name": "Eth1/3"
+            },
+            {
+                "name": "Po100",
+                "trunk": {
+                    "allowed_vlans": [
+                        {
+                            "vlan": 21
+                        },
+                        {
+                            "vlan": 22
+                        }
+                    ]
+                }
+            },
+            {
+                "access": {
+                    "vlan": 22
+                },
+                "name": "Eth1/4"
+            }
+        ],
+        "sonic_l3_interfaces": [
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.21.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_21"
+            },
+            {
+                "ipv4": {
+                    "anycast_addresses": [
+                        "192.168.22.254/24"
+                    ]
+                },
+                "name": "VLAN_Prod_22"
+            }
+        ],
+        "sonic_vlans": [
+            {
+                "vlan_id": 21
+            },
+            {
+                "vlan_id": 22
+            },
+            {
+                "vlan_id": 1100
+            },
+            {
+                "vlan_id": 1200
+            }
+        ],
+        "sonic_vrfs": [
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan1100"
+                        }
+                    ]
+                },
+                "name": "Vrf1"
+            },
+            {
+                "members": {
+                    "interfaces": [
+                        {
+                            "name": "Vlan21"
+                        },
+                        {
+                            "name": "Vlan22"
+                        },
+                        {
+                            "name": "Vlan1200"
+                        }
+                    ]
+                },
+                "name": "Vrf2"
+            }
+        ],
+        "sonic_vxlans": [
+            {
+                "evpn_nvo": "nvo1",
+                "name": "vtep1",
+                "source_ip": "10.1.0.2",
+                "vlan_map": [
+                    {
+                        "vlan": 21,
+                        "vni": 10021
+                    },
+                    {
+                        "vlan": 22,
+                        "vni": 10022
+                    },
+                    {
+                        "vlan": 1100,
+                        "vni": 11100
+                    },
+                    {
+                        "vlan": 1200,
+                        "vni": 11200
+                    }
+                ],
+                "vrf_map": [
+                    {
+                        "vni": 11200,
+                        "vrf": "Vrf2"
+                    }
+                ]
+            }
+        ],
+        "switch_role": "leaf"
+    }
+}
+
+PLAY RECAP *********************************************************************
+LEAF01                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LEAF02                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LEAF03                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LEAF04                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[8mha:////4GApQrrFieLriKYRLL4OqmO2rm4XnpHVZkvdT6WomsF1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw8kjfFPvgAAAA==[0m[Pipeline] sh
++ ansible-playbook playbook/tenant_delete_generator.yaml -v
+Using /home/jenkins/workspace/Tenant-pipeline_main/builder/ansible.cfg as config file
+
+PLAY [LEAVES] ******************************************************************
+
+TASK [generate host_var to delete] *********************************************
+changed: [LEAF02] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n\nsonic_l3_interfaces:\n\nsonic_l2_interfaces:\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "", "sonic_l3_interfaces:", "", "sonic_l2_interfaces:", ""]}
+changed: [LEAF03] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n\nsonic_l3_interfaces:\n\nsonic_l2_interfaces:\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "", "sonic_l3_interfaces:", "", "sonic_l2_interfaces:", ""]}
+changed: [LEAF01] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n\nsonic_l3_interfaces:\n\nsonic_l2_interfaces:\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "", "sonic_l3_interfaces:", "", "sonic_l2_interfaces:", ""]}
+changed: [LEAF04] => {"changed": true, "rc": 0, "stderr": "", "stderr_lines": [], "stdout": "---\nswitch_role: leaf\n\nsonic_vlans:\n\nsonic_l3_interfaces:\n\nsonic_l2_interfaces:\n\n", "stdout_lines": ["---", "switch_role: leaf", "", "sonic_vlans:", "", "sonic_l3_interfaces:", "", "sonic_l2_interfaces:", ""]}
+
+TASK [set_fact] ****************************************************************
+ok: [LEAF01] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": null, "sonic_l3_interfaces": null, "sonic_vlans": null, "switch_role": "leaf"}}, "changed": false}
+ok: [LEAF02] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": null, "sonic_l3_interfaces": null, "sonic_vlans": null, "switch_role": "leaf"}}, "changed": false}
+ok: [LEAF03] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": null, "sonic_l3_interfaces": null, "sonic_vlans": null, "switch_role": "leaf"}}, "changed": false}
+ok: [LEAF04] => {"ansible_facts": {"outcome": {"sonic_l2_interfaces": null, "sonic_l3_interfaces": null, "sonic_vlans": null, "switch_role": "leaf"}}, "changed": false}
+
+TASK [debug] *******************************************************************
+ok: [LEAF01] => {
+    "outcome": {
+        "sonic_l2_interfaces": null,
+        "sonic_l3_interfaces": null,
+        "sonic_vlans": null,
+        "switch_role": "leaf"
+    }
+}
+ok: [LEAF02] => {
+    "outcome": {
+        "sonic_l2_interfaces": null,
+        "sonic_l3_interfaces": null,
+        "sonic_vlans": null,
+        "switch_role": "leaf"
+    }
+}
+ok: [LEAF03] => {
+    "outcome": {
+        "sonic_l2_interfaces": null,
+        "sonic_l3_interfaces": null,
+        "sonic_vlans": null,
+        "switch_role": "leaf"
+    }
+}
+ok: [LEAF04] => {
+    "outcome": {
+        "sonic_l2_interfaces": null,
+        "sonic_l3_interfaces": null,
+        "sonic_vlans": null,
+        "switch_role": "leaf"
+    }
+}
+
+PLAY RECAP *********************************************************************
+LEAF01                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LEAF02                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LEAF03                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LEAF04                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[8mha:////4Ey0QL6hIytUiMMkRftMWKYEiYA41RyxetjHrFtK2fNfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/Dk2eIvgAAAA==[0m[Pipeline] }
+[8mha:////4Lt2Q+v393Q+g5Tw1CKwoufwOWi0lZnUROIDfKNYkKkrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBVEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AHXsPqXvgAAAA==[0m[Pipeline] // dir
+[8mha:////4ArUngLe6Gqijx5UC4siqgQWWMSnw9JxyjjuL4IdY/FAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRCB2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPuRToSu+AAAA[0m[Pipeline] }
+[8mha:////4BXfAdc7+eBV1QD9/lR8XVbZz1S86LAehxLoLYopYoLhAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRCB2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGV9yLWvP//2wKi+AAAA[0m[Pipeline] // stage
+[8mha:////4BB18hGYyyfstHyIEJS66OFpHyfuDnbq8mhlCZuAZsjqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QG1F7+mvgAAAA==[0m[Pipeline] }
+[8mha:////4DR1avNkDNblZbnXngpOTY7c3giKBhWQMnyJBJi0rrjVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICQqJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuD7l22w+NVSxXvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4NU99xwCz5Q3rcs+GMj8EZilDtnzqi9Rk4BfW+CeX8pTAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpQKJAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AJ5WrS29AAAA[0m[Pipeline] }
+[8mha:////4DVJDMHYVu5qgst9Jbp3qVGUBGzkLYU+EuT4h9ahx3xmAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IMLCbGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUH7FSZMb0AAAA=[0m[Pipeline] // node
+[8mha:////4ExVoulgrvU3rwUtefR9rrDp53DNC6K87Psbiuvfry+sAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoEKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPyk3+e70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

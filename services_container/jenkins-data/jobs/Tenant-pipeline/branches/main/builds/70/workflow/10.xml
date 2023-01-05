@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@839.v35e2736cfd5c">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2803.v1a_f77ffcc773">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2803.v1a_f77ffcc773">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=main</string>
+            <string>GIT_COMMIT=a90db8dfa67522349c6fe6a786aa996bffcd9f9b</string>
+            <string>GIT_PREVIOUS_COMMIT=a90db8dfa67522349c6fe6a786aa996bffcd9f9b</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=a90db8dfa67522349c6fe6a786aa996bffcd9f9b</string>
+            <string>GIT_URL=https://github.com/t8d7r/SONiC_CICD_Demo.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1200.v8005c684b_a_c6">
+      <startTime>1672934631337</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

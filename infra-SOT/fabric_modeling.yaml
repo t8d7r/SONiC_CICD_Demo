@@ -20,7 +20,7 @@ LEAVES:
     MCLAG_Interface: Po100, Eth1/8, Eth1/9
     MCLAG_Ip: 10.87.87.0/31
     MCLAG_Peer_Ip: 10.87.87.1/31
-    Mgmt: 172.16.100.57/24
+    Mgmt: 172.16.100.44/24
   LEAF02:
     OS: sonic
     ASN: 65001
@@ -30,7 +30,7 @@ LEAVES:
     MCLAG_Interface: Po100, Eth1/8, Eth1/9
     MCLAG_Ip: 10.87.87.1/31
     MCLAG_Peer_Ip: 10.87.87.0/31
-    Mgmt: 172.16.100.60/24
+    Mgmt: 172.16.100.45/24
   LEAF03:
     OS: sonic
     ASN: 65002
@@ -40,7 +40,7 @@ LEAVES:
     MCLAG_Interface: Po100, Eth1/8, Eth1/9
     MCLAG_Ip: 10.87.87.2/31
     MCLAG_Peer_Ip: 10.87.87.3/31
-    Mgmt: 172.16.100.61/24
+    Mgmt: 172.16.100.47/24
   LEAF04:
     OS: sonic
     ASN: 65002
@@ -50,5 +50,5 @@ LEAVES:
     MCLAG_Interface: Po100, Eth1/8, Eth1/9
     MCLAG_Ip: 10.87.87.3/31
     MCLAG_Peer_Ip: 10.87.87.2/31
-    Mgmt: 172.16.100.62/24
+    Mgmt: 172.16.100.49/24
 BORDERS:
