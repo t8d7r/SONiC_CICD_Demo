@@ -27,13 +27,23 @@ pipeline {
             }
             steps {
                 dir('builder'){
-		     sh 'pwd'
-		     sh 'ls'
-                     sh 'ansible-playbook playbook/tenant_update_generator.yaml -v'
                      sh 'ansible-playbook playbook/tenant_delete_generator.yaml -v'
+                     sh 'ansible-playbook playbook/tenant_update_generator.yaml -v'
                 }
             }
         }
+	 stage('Check generated variables files'){
+            when {
+                anyOf {
+                    changeset "infra-SOT/tenants_mapping.yaml"
+                    changeset "dummy"
+                }
+            }
+            steps {
+                sh ''yamllint builder/host_vars/*'
+            }
+        }
+
 
     }
 }

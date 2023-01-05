@@ -12,4 +12,4 @@
     - set_fact:
         outcome: "{{ outcome.stdout|from_yaml }}"
    
-    - debug: var=outcome
+          #    - debug: var=outcome

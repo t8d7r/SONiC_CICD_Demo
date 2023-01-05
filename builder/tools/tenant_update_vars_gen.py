@@ -57,5 +57,5 @@ vgf = jinja2.Environment(loader=jinja2.FileSystemLoader(path_template)).get_temp
 
 #with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
 with open('../host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
-print (vgf)
+#print (vgf)
 

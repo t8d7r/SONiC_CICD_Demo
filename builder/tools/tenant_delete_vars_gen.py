@@ -101,4 +101,4 @@ if old_if_dict != None:
 vgf = jinja2.Environment(loader=jinja2.FileSystemLoader(path_template)).get_template('tenant_delete_template.j2').render(inventory_hostname = hostname,vlan_to_delete = vlan_to_delete, l2_to_delete = l2_to_delete)
 #with open(local_path+'builder/host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
 with open('../host_vars/'+hostname+'.yaml','w') as f: f.write(vgf)
-print (vgf)
+#print (vgf)
