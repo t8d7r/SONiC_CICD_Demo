@@ -27,7 +27,7 @@ pipeline {
             }
             steps {
                 dir('builder'){
-                     sh 'ansible-playbook playbook/tenant_delete_generator.yaml -i deleteinventory-v'
+                     sh 'ansible-playbook playbook/tenant_delete_generator.yaml -i deleteinventory -v'
                      sh 'ansible-playbook playbook/tenant_update_generator.yaml -i inventory -v'
                 }
             }
