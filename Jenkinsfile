@@ -10,7 +10,8 @@ pipeline {
         stage('Check syntax'){
 	    when {
                 anyOf {
-		    changeset "infra-SOT/dummy"
+		    changeset "infra-SOT/tenants_mapping.yaml"
+		    changeset "dummy"
                 }
             }
             steps {
