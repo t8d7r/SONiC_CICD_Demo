@@ -1,6 +1,11 @@
 pipeline {
     agent {label 'services'}
     stages {
+	stage('checkout'){
+            steps{
+                git branch: 'master', url: 'https://github.com/t8d7r/SONiC_CICD_Demo.git'
+            }
+        }
 	stage('Test command') {
             steps {
 		    sh 'python3 --version'
