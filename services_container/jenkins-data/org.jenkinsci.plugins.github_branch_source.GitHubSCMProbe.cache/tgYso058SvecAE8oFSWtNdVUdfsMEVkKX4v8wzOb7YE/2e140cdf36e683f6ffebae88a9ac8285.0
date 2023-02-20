@@ -5,15 +5,12 @@ Accept: application/vnd.github.v3+json
 Accept-Encoding: gzip
 HTTP/1.1 200 
 28
-content-type: application/json; charset=utf-8
-content-encoding: gzip
-accept-ranges: bytes
-content-length: 729
 server: GitHub.com
-date: Mon, 20 Feb 2023 15:04:01 GMT
+date: Mon, 20 Feb 2023 15:09:00 GMT
+content-type: application/json; charset=utf-8
 cache-control: public, max-age=60, s-maxage=60
 vary: Accept, Accept-Encoding, Accept, X-Requested-With
-etag: W/"8c57bc4d37aed4c9a3a9a2b38b9a4131314036dc"
+etag: W/"f826d3b19c27e7efbc97ae29c49743eef7126b46"
 last-modified: Fri, 21 Oct 2022 08:13:26 GMT
 x-github-media-type: github.v3; format=json
 x-github-api-version-selected: 2022-11-28
@@ -25,14 +22,17 @@ x-content-type-options: nosniff
 x-xss-protection: 0
 referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
 content-security-policy: default-src 'none'
+content-encoding: gzip
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 47
-x-ratelimit-reset: 1676907541
+x-ratelimit-remaining: 43
+x-ratelimit-reset: 1676907540
 x-ratelimit-resource: core
-x-ratelimit-used: 13
-x-github-request-id: 5E1F:42AC:4D5D91:9E41C2:63F38BE1
-OkHttp-Sent-Millis: 1676905441446
-OkHttp-Received-Millis: 1676905441614
+x-ratelimit-used: 17
+accept-ranges: bytes
+content-length: 729
+x-github-request-id: C0CB:13AA:516D80:A694C9:63F38D0C
+OkHttp-Sent-Millis: 1676905740828
+OkHttp-Received-Millis: 1676905741023
 
 TLS_AES_128_GCM_SHA256
 3
