@@ -1,6 +1,6 @@
-Started by timer
-[Mon Feb 20 15:34:00 UTC 2023] Starting branch indexing...
-[8mha:////4Ffw+H6ljHsCdcBTr4ONnwaVVSm9E5/54KpmrhEn+PjaAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRbfumt4wDVUSVQjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+Started by user [8mha:////4Isgi+r4oo5dIQkAtFLehoGaDpjytGa2qbrmze+S0bMeAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9koz83MRiAAB97I7BAAAA[0mthomas
+[Mon Feb 20 15:36:23 UTC 2023] Starting branch indexing...
+[8mha:////4NX1sjn58kZQ83sIOcnte1OKv8Z6wUmV3JnqKl5W58noAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHRbfgXPdwCzkEapjgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
 Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLWHQyCgpKSi20tdPzyzJKE0C6srVL7FIMS/SD/b3y3SOd/Z0dol3Sc3NBwC7A0h7rQAAAA==[0mt8d7r/SONiC_CICD_Demo
 
   Checking branches...
@@ -12,7 +12,8 @@ Examining [8mha:////4DbK1ZSIwOWm+/WDhim/47gfj74pgaYiaCfZYRl7+N+IAAAAqB+LCAAAAAA
   Getting remote pull requests...
       ‘Jenkinsfile’ found
     Met criteria
-No changes detected: main (still at 23ca282f8bf455d75e3d3c6f772e3d1e4669394c)
+Changes detected: main (23ca282f8bf455d75e3d3c6f772e3d1e4669394c → 02aba4ab739d780b01bc74a78c881cfeaabaafca)
+Scheduled build for branch: main
 
   1 branches were processed
 
@@ -22,5 +23,5 @@ No changes detected: main (still at 23ca282f8bf455d75e3d3c6f772e3d1e4669394c)
 
 Finished examining t8d7r/SONiC_CICD_Demo
 
-[Mon Feb 20 15:34:01 UTC 2023] Finished branch indexing. Indexing took 1.4 sec
+[Mon Feb 20 15:36:25 UTC 2023] Finished branch indexing. Indexing took 1.6 sec
 Finished: SUCCESS
